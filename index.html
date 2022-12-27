@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, frances, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, aprender, FLE, clases, conjugar en frances, conjugacion frances, verbos irregulares">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="ConjugadorJS.js"></script>
+	
+</head>
+<body onload="borrarInput()">
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Conjugador de verbos en presente del indicativo</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='Videos.html'">Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicios/Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+		
+	  
+		<section id="seccion">
+			<label id="label">Escriba un verbo y presione <i>Enter</i> para conjugar :</label>
+			<input type="text" id="verbo" placeholder="Escriba aqu&#237;" onchange="controlar()" autocomplete="off" autofocus required />
+			<br><br>
+		
+		
+			<section id="tablero">											<!-- Tablero Principal -->
+			
+			
+			
+			<section id="excluyeparraf">
+			
+				<section class="tableros" id="tabprinc">					<!-- 1ra Conjugacion -->
+				<h2 class="titconj" id="headtabprin">Conjugaci&#243;n</h2>		<!-- Titulo 1 -->
+				
+					<section class="tabconj" id="personas">					<!-- Pronombres 1 -->
+					</section>
+					
+					<section class="tabconj conj" id="conjugacion">			<!-- Conjugacion 1 -->
+					</section>
+				</section>
+				<section class="tableros" id="tabsec">						<!-- 2da Conjugacion -->
+				<h2 class="titconj" id="headtabsec"></h2>					<!-- Titulo 2 -->
+				
+					<section class="tabconj" id="segundapers">				<!-- Pronombres 2 -->
+					</section>
+					
+					<section class="tabconj conj" id="segundaconj">			<!-- Conjugacion 2 -->
+					</section>
+				</section>
+			</section>	
+			<p id = "parraf"></p>										<!-- Codigo de colores -->
+			</section>
+		<article class="articulos" id="datos">
+			
+		</article>
+		<article class="articulos">
+			
+		</article>
+	</section>
+	
+	<aside id="columna">
+		
+	</aside>
+		
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	
+	
+	
+	
+	
+</body>
+</html>

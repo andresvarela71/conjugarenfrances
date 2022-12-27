@@ -1,0 +1,109 @@
+@charset "UTF-8";
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup {display: block; margin: 0px; padding: 0px; }
+header {text-align: center; background-color: #204a87; color: white; padding-bottom:5px; padding-top:10px; margin-bottom: 0;}
+
+hr {color: #00ffff; margin: 0;} /* linea horizontal */
+
+#navegacion {text-align: center; background-color: #204a87; margin: 0;  padding-top: 2px; padding-bottom: 2px;} /* zona de botones principales */
+#navegacion ul {margin: 0;}
+#navegacion li {display:inline-block; list-style: none; margin-left: 50px; margin-right: 50px; padding-top: 0px; } /* texto botones principales */
+button {background-color: #00ffff; 
+				width: 150px; height: 36px; border-width: 5px; border-color:teal; border-radius: 15px; color: purple; font-size: 20px; 
+				 }
+
+#navegacion button:hover {color: #00ffff; background-color: #204a87; border-color:#00ffff; cursor: pointer;}  /* evento mouse sobre botones principales */
+
+
+#comprar:hover  {color: #00ffff; background-color: purple;  cursor: pointer;} 
+#descrlibro {width: 300px;}
+#tablalibro {margin: 0 auto;}
+
+/* CONJUGADOR */
+#verbo {height: 30px; font-size: 20px; margin-left: 60px; border-width: 5px; border-radius: 5px; 
+	border-color: #ad7fa8; }
+#tablero {background: rgb(211, 215, 207); border-style: groove; border-width: 5px; width: 900px; 
+	height: 350px; text-align: bottom;  }
+.titconj {text-align: center; font-size: 22px; margin-top: 20px;}
+
+.tabconj {background:rgb(211, 215, 207);font-size: 22px; margin: 0; padding: 0 ; }
+#excluyeparraf {display: flex;}
+#personas {text-align: right;    width: 180px; float: left; margin-right: 10px;}
+#segundapers {text-align: right;  width: 180px; float: left; margin-right:  10px;}
+
+#conjugacion {text-align: left;  width: 250px; margin: 0; padding: 0 ; float:left;  }
+#segundaconj {text-align: left;  width: 250px; margin: 0; padding: 0 ; float: left;}
+
+
+#parraf { text-align:left; font-size: 14px; display: block; float: inherit; margin-top: 40px; text-align: center; }
+#pie {font-size: small; text-align: right;}
+#seccion {margin-left: 40px; margin-top: 10px}
+#label {margin-left: 40px; }
+header h1 {font-size: 56px; text-shadow: 4px 4px 5px #00ffff; padding: 0 0; margin: 0 0 ;}
+body {background-color: #d0e5e6;}
+#datos { background-color:silver;  border-style: groove; border-width: 5px; width: 900px; height: 75px;}
+
+
+/* CLASES GENERAL */
+.rojo {color: red;}
+.naranja {color: orange;}
+.verde {color: green;}
+.azul {color: blue;}
+.negro {color: black;}
+.fucsia {color: fuchsia;}
+.oculto {visibility: hidden;}
+
+
+.ital {font-style: italic;}
+.subray {text-decoration: underline;}
+.negrita {font-weight: bold;}
+
+.centro {text-align: center;}
+.der {text-align: right;}
+.margenes {margin-left: 10px; margin-right: 10px; }
+.ancho60 {width: 60px;}
+.ancho100 {width: 100px;}
+.ancho120 {width: 120px;}
+.ancho6em {width: 6em;}
+.ancho8em {width: 8em;}
+.sangria {margin-left: 200px;}
+.letra12 {font-size: 1.2em;}
+.letra10 {font-size: 1em;}
+.letra8 {font-size: 0.8em;}
+
+#tabla {background: rgb(211, 215, 207); border-style: groove; border-width: 5px; width: 1200px; height: 500px}
+#tittab {height: 30px;}
+
+
+
+
+#pie {display: block; clear: both;}
+
+
+#columna {float: left; width: 250px; min-height: 100%; background-color: #204a87; margin-right: 10px;}
+#videoYT {float: left;}
+#listas {color: #00ffff;}
+#listas li:hover {color: yellow; cursor: pointer;}
+
+#tapadelibro {float: left; margin-right: 10px;}
+#sarasa p {margin-left: 10px;}
+
+
+/*  ejercicios */
+
+#tablaej1 {background: rgb(211, 215, 207); border-style: groove; border-width: 5px; font-size: 1.2em;}
+
+
+.label { width: 100px; font-weight: bold; color: black; background-color: transparent; margin-left: 10px; margin-right: 10px;}
+.botres {width: 70px; height: 70px; font-size: 3em; color: black; margin-left: 26px; margin-right: 26px;}
+.botones {border-width: 5px; border-radius: 10px;  border-color: blue; background-color:  #00ffff; margin-top: 10px; margin-bottom: 10px;}
+.botones:hover {background-color: blue ; color: aqua; cursor: pointer;}
+#botverde {background-color: green;}
+#botrojo {background-color: red;}
+#contador {display: block;}
+#ejercicio {text-align: center;}
+/*#botabla {margin-left: auto; margin-right: auto;}*/
+
+
+
+

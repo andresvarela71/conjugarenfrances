@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Ejercicios en línea de conjugación en francés">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, ejercicios, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Ejercicios.js" ></script>
+</head>
+<body onload="borrar(1)">
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Ejercicios</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+	<aside id="columna">
+		<ol id="listas">
+			
+		</ol>
+	</aside>
+	<section>
+		<h3 id="kejerc"></h3>
+		
+		<form>
+			<p><span class="negrita">A partir de la conjugaci&#243;n del verbo <span class="ital letra12 azul">travailler</span>, eleg&#237; las respuesta correctas:</span><br>
+			<span id="previo" class="ital rojo"></span></p>
+			
+			<table id="tablaej1">
+				<tr>
+					<th class="ancho60"></th><td>travailler</td><th class="ancho60"></th><td></td><td></td><th class="ancho60"></th>
+				</tr>
+				<tr>
+					<td></td>
+					<td> travaille</td>
+					<td></td>
+					<td id="verbo0">La terminaci&#243;n es</td>
+					<td>
+						<select class="letra10" name="respuesta1" id="respuesta1"   onchange="blanco(0)">
+						<option label=" "> </option>
+						<option> des(pl)</option>
+						<option> des(sing)</option>
+						<option> -er</option>
+						<option>travaill-</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>travaill<span class="negrita verde">es</span></td>
+					<td></td>
+					<td id="verbo1">El radical es</td>
+					<td>
+					<select class="letra10" name="respuesta2" id="respuesta2"   onchange="blanco(1)">
+						<option  label=" "> </option>
+						<option> des(pl)</option>
+						<option> des(sing)</option>
+						<option> -er</option>
+						<option>travaill-</option>
+					</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>travaille</td>
+					<td></td>
+					<td id="verbo2"><span class="negrita azul">-ez</span> es una</td>
+					<td>
+					<select class="letra10" name="respuesta3" id="respuesta3"  onchange="blanco(2)">
+						<option  label=" "> </option>
+						<option> des(pl)</option>
+						<option> des(sing)</option>
+						<option> -er</option>
+						<option>travaill-</option>
+					</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>travaillons</td>
+					<td></td>
+					<td id="verbo3"><span class="negrita verde">-es</span> es una</td>
+					<td>
+					<select class="letra10" name="respuesta4" id="respuesta4"  onchange="blanco(3)">
+						<option  label=" "> </option>
+						<option> des(pl)</option>
+						<option> des(sing)</option>
+						<option> -er</option>
+						<option>travaill-</option>
+					</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>travaill<span class="negrita azul">ez</span></td>
+					<td></td>
+					<td></td>
+					<td>
+					<select name="oculto" class="oculto letra10">
+						<option  label=" "> </option>
+						<option> des(pl)</option>
+						<option> des(sing)</option>
+						<option> -er</option>
+						<option>travaill-</option>
+					</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>travaillent</td>
+					<td></td>
+					<td></td>
+					<td>
+					<select  name="oculto" class="oculto letra10">
+						<option  label=" "> </option>
+						<option> des(pl)</option>
+						<option> des(sing)</option>
+						<option> -er</option>
+						<option>travaill-</option>
+					</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					
+					<td class="centro" colspan="6" id="botabla">
+					
+					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(1,'s')">
+					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(1)">
+					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(1)">
+					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+					
+					</select>
+					</td>
+					
+				</tr>
+				<tr>
+					<td  class="centro" colspan="6"><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
+				</tr>
+				<tr>
+					<td  class="centro" colspan="6"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
+				</tr>
+			</table> 
+		</form>
+		
+		
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	
+	<script>crearlista();</script>
+	
+</body>
+</html>
+

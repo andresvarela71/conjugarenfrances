@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Ejercicios.js" ></script>
+</head>
+<body onload="borrar(8)">
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Ejercicios</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+	<aside id="columna">
+		<ol id="listas">
+			
+		</ol>
+	</aside>
+	<section>
+		<h3 id="kejerc"></h3>
+		<form>
+			<p><span class="negrita">Conjug&#225; los verbos entre par&#233;ntesis en las personas que correspondan:</span><br>
+			<span id="previo" class="ital rojo"></span></p>
+			<table id="tablaej1">
+				<tr>
+					<td colspan="2">
+						Il <input class="margenes ancho100 letra12" autofocus   onclick="blanco(0)" onblur="input(0)"> <span class="negrita ital">(<span id="verbo0">entrer</span>)</span> comme employ&#233; aux &#233;critures commerciales
+						 dans une entreprise de tuiles, <input class="margenes ancho100 letra12" onclick="blanco(1)" onblur="input(1)"> <span class="negrita ital">(<span id="verbo1">quitter</span>)</span> la place 
+						 deux saisons plus tard. Embauch&#233; en tant que repr&#233;sentant en province
+						  pour le compte d'une firme suisse, il <input class="margenes ancho100 letra12" onclick="blanco(2)" onblur="input(2)"><span class="negrita ital"> (<span id="verbo2">vendre</span>) </span>
+						  un camion en un an et <input class="margenes ancho6em letra12" onclick="blanco(3)" onblur="input(3)"> <span class="negrita ital">(<span id="verbo3">d&#233;missionner</span>)</span>. Retour 
+						  à la case de d&#233;part. Chez sa cousine <input class="margenes ancho100 letra12" onclick="blanco(4)" onblur="input(4)"> <span class="negrita ital">(<span id="verbo4">d&#233;filer</span>)</span>
+						   les &#233;minences grises de la NRF.  Apr&#232;s un rendez-vous manqu&#233; aux Deux-Magots, 
+						   Jean Pr&#233;vost <input class="margenes ancho100 letra12" onclick="blanco(5)" onblur="input(5)"> <span class="negrita ital">(<span id="verbo5">publier</span>)</span> dans la revue 
+						  'Navire d'argent' le texte de la nouvelle que Saint-Ex a remis à la caissi&#232;re du caf&#233;.
+						   C' <input class="margenes ancho100 letra12" onclick="blanco(6)" onblur="input(6)"><span class="negrita ital"> (<span id="verbo6">&#234;tre</span>)</span> un d&#233;but prometteur.
+						    Avec L&#233;on-Paul Fargue, qui l'<input class="margenes ancho100 letra12" onclick="blanco(7)" onblur="input(7)"> <span class="negrita ital">(<span id="verbo7">introduire</span>)</span> dans le milieu &#233;ditorial,
+						     une amiti&#233; <input class="margenes ancho100 letra12" onclick="blanco(8)" onblur="input(8)"> <span class="negrita ital">(<span id="verbo8">na&#238;tre</span>)</span>, faite 
+						   de longues promenades à la campagne et de causeries enfum&#233;es. En 1926, Gallimard,
+						    qui <input class="margenes ancho100 letra12" onclick="blanco(9)" onblur="input(9)">   <span class="negrita ital">(<span id="verbo9">compter</span>) </span>sur lui pour r&#233;diger des 
+						   romans d'aviation, <input class="margenes ancho100 letra12" onclick="blanco(10)" onblur="input(10)"> <span class="negrita ital">(<span id="verbo10">signer</span>) </span>un contrat avec Saint-Ex.
+			
+					</td>
+				</tr>
+				<tr>
+					<td class="der" colspan="2">
+					  <span class="negrita ital">L'&#233;v&#232;nement N&#186;509</span>, ao&#251;t 1994
+					</td>
+				</tr>
+				<tr>
+					
+					
+					<td class="centro">
+						<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(8, 'i')">
+						<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(8)">
+						<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(8)">
+						<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+						
+						</select>
+					</td>
+					<td>
+						<input class="letra10  botones" type="button" value="&#238;" onclick="agregarcar('icirc')">
+						<input class="letra10  botones" type="button" value="&#233;" onclick="agregarcar('eag')">
+					</td>
+				</tr>
+				<tr>
+					<td  class="centro"><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
+				</tr>
+				<tr>
+					<td  class="centro" ><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
+				</tr>
+			</table>
+		</form>
+		
+		
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	<script>crearlista();</script>
+</body>
+</html>

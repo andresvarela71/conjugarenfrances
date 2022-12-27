@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Ejercicios.js"></script>
+</head>
+<body onload="borrar(15, 'aleat')">
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Ejercicios</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+	
+	<aside id="columna">
+		<ol id="listas">
+			
+		</ol>
+	</aside>
+	<section>
+		<h3  id="kejerc"></h3>
+		<form>
+			<p><span class="negrita">Indic&#225; la terminaci&#243;n de cada verbo:</span><br>
+			<span id="previo" class="ital rojo"></span></p>
+			<table  id="tablaej1">
+			<tr><td class="ancho100"></td><td id="verbo0"></td><td><input class="margenes ancho60 letra12"  onclick="blanco(0)"></td><td class="ancho100"></tr>
+			<tr><td class="ancho100"></td><td id="verbo1"></td><td><input class="margenes ancho60 letra12" onclick="blanco(1)"></td><td class="ancho100"></tr>
+			<tr><td class="ancho100"></td><td id="verbo2"></td><td><input class="margenes ancho60 letra12" onclick="blanco(2)"></td><td class="ancho100"></tr>
+			<tr><td class="ancho100"></td><td id="verbo3"></td><td><input class="margenes ancho60 letra12" onclick="blanco(3)"></td><td class="ancho100"></tr>
+			<tr><td class="ancho100"></td><td id="verbo4"></td><td><input class="margenes ancho60 letra12" onclick="blanco(4)"></td><td class="ancho100"></tr>
+			<tr><td class="ancho100"></td><td id="verbo5"></td><td><input class="margenes ancho60 letra12" onclick="blanco(5)"></td><td class="ancho100"></tr>
+			<tr><td class="ancho100"></td><td id="verbo6"></td><td><input class="margenes ancho60 letra12"  onclick="blanco(6)"></td><td class="ancho100"></tr>
+			<tr><td class="ancho100"></td><td id="verbo7"></td><td><input class="margenes ancho60 letra12" onclick="blanco(7)"></td><td class="ancho100"></tr>
+				
+									
+				<tr>	
+					<td class="centro" colspan="4">
+					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(15, 'i', 'aleat')">
+					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(15, 'aleat')">
+					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(15, 'aleat')">
+					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+						
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td  class="centro" colspan="4" ><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
+				</tr>
+				<tr>
+					<td  class="centro"  colspan="4"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	
+	<section>
+		
+	
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	<script>crearlista();</script>
+</body>
+</html>

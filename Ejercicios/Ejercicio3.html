@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, ejercicios, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Ejercicios.js" ></script>
+</head>
+<body onload="borrar(3, 'aleat')">
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Ejercicios</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+	<aside id="columna">
+		<ol id="listas">
+			
+		</ol>
+	</aside>
+	<section>
+		<h3 id="kejerc"></h3>
+		<form>
+			<p><span class="negrita">Indic&#225; si los siguientes verbos se conjugan con des(a) o con des(b):</span><br>
+			<span id="previo" class="ital rojo"></span></p>
+			
+			<table id="tablaej1">
+				<tr>
+					<td class="ancho100"></td>
+					<td id="verbo0"> </td>
+					<td class="ancho100"></td>
+					<td>
+						<select name="respuesta0" id="respuesta0" class="letra10"  onchange="blanco(0)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td class="ancho100"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verbo1"> </td>
+					<td></td>
+					<td>
+						<select name="respuesta1" id="respuesta1" class="letra10"  onchange="blanco(1)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verbo2"></td>
+					<td></td>
+					<td>
+					<select name="respuesta2" id="respuesta2" class="letra10"  onchange="blanco(2)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verbo3"></td>
+					<td></td>
+					<td>
+					<select name="respuesta3" id="respuesta3" class="letra10"  onchange="blanco(3)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verbo4"></td>
+					<td></td>
+					<td>
+					<select name="respuesta4" id="respuesta4" class="letra10"  onchange="blanco(4)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verbo5"></td>
+					<td></td>
+					<td>
+					<select name="respuesta5" id="respuesta5" class="letra10"  onchange="blanco(5)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verbo6"></td>
+					<td></td>
+					<td>
+					<select name="respuesta6" id="respuesta6" class="letra10"  onchange="blanco(6)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td id="verbo7"></td>
+					<td></td>
+					<td>
+					<select name="respuesta7" id="respuesta7" class="letra10"  onchange="blanco(7)">
+						<option label=" "> </option>
+						<option> des(a)</option>
+						<option> des(b)</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					
+					<td class="centro" colspan="5" id="botabla">
+					
+					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(3, 's', 'aleat')">
+					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(3, 'aleat')">
+					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(3, 'aleat')">
+					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+						
+					</select>
+					</td>
+					
+				</tr>
+				<tr>
+					<td  class="centro" colspan="5"><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
+				</tr>
+				<tr>
+					<td  class="centro" colspan="5"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
+				</tr>
+			</table> 
+		</form>
+		
+		
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	<script>crearlista();</script>
+</body>
+</html>

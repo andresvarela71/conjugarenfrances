@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Curso completo en video de conjugación de verbos en francés">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Videos.js"></script>
+</head>
+<body>
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Curso completo de conjugaci&#243;n en video</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='Videos.html'" >Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicios/Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+	<aside id="columna" >
+		<ol id="listas">
+			<li onclick="cargarvideo(1)">Conceptos b&#225;sicos</li>
+			<li onclick="cargarvideo(2)">Los pronombres de conjugaci&#243;n</li>
+			<li onclick="cargarvideo(3)">Lo regular de los verbos irregulares</li>
+			<li onclick="cargarvideo(4)">La marca plural (1ra parte)</li>
+			<li onclick="cargarvideo(5)">La marca plural (2da parte)</li>
+			<li onclick="cargarvideo(6)">La marca plural (3ra parte)</li>
+		</ol>
+	</aside>
+	<section id="videoYT" >
+		<h3 id="titvideo">1. Conceptos b&#225;sicos</h3>
+		<iframe id="frame" width="840" height="473" src="https://www.youtube.com/embed/BF_JDIyioJo" title="YouTube video player"  allow="fullscreen" ></iframe>
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+</body>
+</html>

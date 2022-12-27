@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Ejercicios.js" ></script>
+</head>
+<body onload="borrar(11)">
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Ejercicios</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+	<aside id="columna">
+		<ol id="listas">
+			
+		</ol>
+	</aside>
+	<section>
+		<h3 id="kejerc"></h3>
+		<form>
+			<p><span class="negrita">Conjug&#225; los verbos en las personas indicadas:</span><br>
+			<span id="previo" class="ital rojo"></span></p>
+			
+			<table id="tablaej1">
+				<tr>
+					<td class="ancho60"></td><th id="verbo0">peler</th><td class="ancho60"></td><th id="verbo1">avoir</th><td class="ancho60"></td><th id="verbo2">appeler</th><td class="ancho60"></td><th id="verbo3">d&#233;placer</th><td class="ancho60"></td><th id="verbo4">pr&#233;c&#233;der</th>
+				</tr>
+				<tr>
+					
+					<td class="der">je &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(0)" autofocus onblur="input(0)"></td>
+					<td class="der">tu &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(1)" onblur="input(1)"></td>
+					<td class="der">tu &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(2)" onblur="input(2)"></td>
+					<td class="der">elle &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(3)" onblur="input(3)"></td>
+					<td class="der">je &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(4)" onblur="input(4)"></td>
+				</tr>
+				<tr>
+					
+					<td class="der">vous &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(5)" onblur="input(5)"></td>
+					<td class="der">elles &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(6)" onblur="input(6)"></td>
+					<td class="der">nous &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(7)" onblur="input(7)"></td>
+					<td class="der">vous &nbsp;</td><td><input class="ancho100 letra12" onclick="blanco(8)"  onblur="input(8)"></td>
+					<td class="der">vous &nbsp;</td><td><input class="ancho100 letra12" onclick="blanco(9)"  onblur="input(9)"></td>
+				</tr>
+				
+				
+				<tr>
+					<td></td><td></td>
+					<td class="centro" colspan="7">
+					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(11, 'i')">
+					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(11)">
+					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(11)">
+					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+						
+					</select>
+					</td>
+					<td>
+						<input class="letra10  botones" type="button" value="&ccedil;" onclick="agregarcar('c')">
+						<input class="letra10  botones" type="button" value="&#232;" onclick="agregarcar('egr')">
+						<input class="letra10  botones" type="button" value="&#233;" onclick="agregarcar('eag')">
+					</td>
+				</tr>
+				<tr>
+					<td  class="centro" colspan="10"><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
+				</tr>
+				<tr>
+					<td  class="centro" colspan="10"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
+				</tr>
+			</table> 
+		</form>
+		
+		
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	<script>crearlista();</script>
+</body>
+</html>

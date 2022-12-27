@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Ejercicios.js"></script>
+</head>
+<body onload="borrar(7)">
+	<header id="encabezado">
+		<h1 id="titpag">Conjugar en franc&#233;s</h1>
+		<h2 id="indsec">Ejercicios</h2>
+	</header>
+	<hr>
+	<nav id="navegacion">
+		<ul>
+			<li><button id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+			<li><button id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+			<li><button id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+			<li><button id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+		</ul>
+	</nav>
+	
+	<aside id="columna">
+		<ol id="listas">
+			
+		</ol>
+	</aside>
+	<section>
+		<h3  id="kejerc"></h3>
+		<form>
+			<p><span class="negrita">Conjug&#225; los verbos entre par&#233;ntesis en las personas que correspondan:</span><br>
+			<span id="previo" class="ital rojo"></span></p>
+			<table id="tablaej1">
+			<tr>
+			<td>
+			<ol>
+				<li>Je<input class="margenes ancho100 letra12"  onclick="blanco(0)">(<span id="verbo0">prendre</span>) le m&#233;tro.</li>
+				<li>Nous<input class="margenes ancho6em letra12"  onclick="blanco(1)">(<span id="verbo1">regarder</span>) la t&#233;l&#233;.</li> 
+				<li>Elle<input class="margenes ancho100 letra12"  onclick="blanco(2)">(<span id="verbo2">souffrir</span>) beaucoup.</li>
+				<li>Pierre et Marie<input class="margenes ancho6em letra12"  onclick="blanco(3)">(<span id="verbo3">travailler</span>) &#224; la banque.</li>
+				<li>Pourquoi est-ce que tu<input class="margenes ancho100 letra12"  onclick="blanco(4)">(<span id="verbo4">ouvrir</span>) la porte ?</li>
+				<li>Il<input class="margenes ancho100 letra12"  onclick="blanco(5)">(<span id="verbo5">rire</span>) tout le temps.</li>
+				<li>Vous<input class="margenes ancho100 letra12"  onclick="blanco(6)">(<span id="verbo6">aller</span>) au cin&#233;ma ce soir ?</li>
+				<li>Tu<input class="margenes ancho100 letra12"  onclick="blanco(7)">(<span id="verbo7">courir</span>) tous les matins ?</li>
+				<li>Ils<input class="margenes ancho6em letra12"  onclick="blanco(8)">(<span id="verbo8">sembler</span>) heureux.</li>
+				<li>Le mot<input class="margenes ancho100 letra12"  onclick="blanco(9)">(<span id="verbo9">inclure</span>) les deux notions.</li>
+				</ol>
+			</td>
+			</tr>
+			<tr>
+					
+					
+					<td class="centro">
+					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(7, 'i')">
+					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(7)">
+					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(7)">
+					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+						
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td  class="centro" ><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
+				</tr>
+				<tr>
+					<td  class="centro" ><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	
+	<section>
+		
+	
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	<script>crearlista();</script>
+</body>
+</html>
