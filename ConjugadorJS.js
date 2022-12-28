@@ -22,7 +22,7 @@ var pers;								// pronombres de conjugación
 var persesp = "<br>Yo<br>T\u00fa<br>\u00c9l / Ella<br>Nosotros<br>Vosotros<br>Ellos / Ellas<br>"; // pronombres del español
 var pronombres;
 var seg_msg = [];																			// mensaje de alerta
-
+var large = Boolean;
 var codigo = "<b>C\u00f3digo de colores: </b><font color = 'red'>\u{1F7E5}</font> Radical || <font color = 'yellow'>\u{1F7E8}</font> Terminaci\u00f3n || <font color = 'green'>\u{1F7E9}</font> Desinencia singular || <font color = 'blue'>\u{1f7e6}</font> Desinencia plural ||	<font color = 'black'>\u{2b1b}</font> Marca de Plural"
 var ayuda = "<b>Tips: </b>"; 														// publica datos de la conjugación
 
@@ -104,8 +104,9 @@ var dato=[
 	conjugacion.innerHTML = "";													// borra pronombres derecha
 	conjugacion = document.getElementById("headtabsec");
 	conjugacion.innerHTML = "";													// borra titulo derecha
-
-	
+	conjugacion = document.getElementById("aclara");
+	conjugacion.innerHTML = "";	
+	document.getElementById("aclara").style.zIndex = 0;
 													// borra ayuda
 	conjugacion = document.getElementById("parraf");							// borra codigo de colores
 	conjugacion.innerHTML = "";	
@@ -438,12 +439,20 @@ function impConj() {
 		conjugacion = document.getElementById("headtabsec");
 		conjugacion.innerHTML = seg_msg[0];											// imprime tirulo cuadro derecha
 		
-		conjugacion = document.getElementById("segundapers");		// imprime pronombres para conjugacion alternativa 
-		conjugacion.innerHTML = proder; 
+		if (large == true) {
+			large = false;
+			conjugacion = document.getElementById("aclara");
+			conjugacion.innerHTML = seg_msg[1];; 
+		} else {
+			document.getElementById("aclara").style.zIndex = -1;
 
-		conjugacion = document.getElementById("segundaconj");
-		conjugacion.innerHTML = seg_msg[1];											// imprime texto cuadro derecha
-		
+			conjugacion = document.getElementById("segundapers");		// imprime pronombres para conjugacion alternativa 
+			conjugacion.innerHTML = proder; 
+
+			conjugacion = document.getElementById("segundaconj");
+			conjugacion.innerHTML = seg_msg[1];											// imprime texto cuadro derecha
+		}
+
 		codcol = document.getElementById("parraf");
 		codcol.innerHTML = codigo;														// imprime codigo de colores
 
@@ -1028,6 +1037,7 @@ function esirregular() {
 					seg_msg[0] = "<small>Aclaraci\u00f3n:</small>";											// titulo mensaje lateral 
  					seg_msg[1] = "<small>Cuando decimos que <cite>la terminaci\u00f3n es = RG </cite>es porque sigue <strong>la Regla General (RG):</strong> <cite>'la terminaci\u00f3n son las dos \u00faltimas letras del infinitivo.'</cite></small>";	
 					proder = null;
+					large = true;
 					} else {
 					seg_msg[0] = "";
 					seg_msg[1] = "";
