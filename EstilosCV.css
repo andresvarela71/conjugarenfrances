@@ -67,10 +67,11 @@ hr {									 /* linea horizontal */
 #contbot {
 	list-style: none;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	
 	justify-items: center;
 	margin: 0;
+	padding: 0;
 }
 
 
@@ -80,13 +81,13 @@ hr {									 /* linea horizontal */
 	list-style: none; 
 	padding-top: 0px; 
 	background-color: #00ffff;
-	width: 150px;
-	height: 36px;
-	border-width: 5px;
+	width: 100px;
+	height: 24px;
+	border-width: 3px;
 	border-color:teal;
-	border-radius: 15px;
+	border-radius: 10px;
 	color: purple;
-	font-size: 20px; 
+	font-size: 14px; 
 } 
 
 .boton:hover {							/* evento mouse sobre botones principales */
@@ -102,11 +103,12 @@ hr {									 /* linea horizontal */
 	display: grid;
 	grid-template-columns: repeat(12, 8.33%);
 	grid-template-rows: auto;
+
 }
 
 #consigna {
 	grid-column: 1 / 13;
-	align-self: flex-end;
+	font-size: 0.9em;
 }
 
 #verbaconj {
@@ -115,11 +117,11 @@ hr {									 /* linea horizontal */
 
 #verbo {
 	width: 300px;
-	height: 30px; 
-	font-size: 20px; 
+	height: 20px; 
+	font-size: 16px; 
 	
-	border-width: 5px; 
-	border-radius: 5px; 
+	border-width: 3px; 
+	border-radius: 3px; 
 	border-color: #ad7fa8; 
 }
 
@@ -131,14 +133,16 @@ hr {									 /* linea horizontal */
 }
 
 #personas {
-	grid-column: 1/4;
-	text-align: right;    
-	margin-right: 10px;
+	grid-column: 1/6;
+	text-align: right;
+	padding-right: 10px;   
+	align-self: stretch; 
 }
 
 #conjugacion {
-	grid-column: 4/13;
+	grid-column: 6/13;
 	text-align: left;  
+	height: 10em;
 	margin: 0; 
 	padding: 0 ; 
 }
@@ -151,13 +155,13 @@ hr {									 /* linea horizontal */
 }
 
 #segundapers {
-	grid-column: 1/4;
+	grid-column: 1 / 6;
 	text-align: right;  
-	margin-right:  10px;
+	padding-right: 10px;
 }
 
 #segundaconj {
-	grid-column: 4/13;
+	grid-column: 6 / 13;
 	text-align: left;  
 	margin: 0; 
 	padding: 0 ; 
@@ -178,18 +182,28 @@ hr {									 /* linea horizontal */
 	border-width: 5px; 
 }
 
+.cuadro {
+	background:rgb(211, 215, 207);
+}
+
+.tabconj {
+	
+	font-size: 18px; 
+	margin: 0; 
+	padding: 0 ;
+}
+
 #comprar:hover  {color: #00ffff; background-color: purple;  cursor: pointer;} 
 #descrlibro {width: 300px;}
 #tablalibro {margin: 0 auto;}
 
-/* CONJUGADOR */
-
-#tablero {background: rgb(211, 215, 207); border-style: groove; border-width: 5px; width: 900px; 
-	height: 350px; text-align: bottom;  }
 
 
-.tabconj {background:rgb(211, 215, 207);font-size: 22px; margin: 0; padding: 0 ; }
-#excluyeparraf {display: flex;}
+
+
+
+
+
 
 
 
@@ -278,13 +292,33 @@ body {background-color: #d0e5e6;}
 		font-size: 24px;
 	}
 
+	.boton {
+		width: 150px;
+		height: 36px;
+		border-width: 5px;
+		border-radius: 15px;
+		font-size: 20px; 
+	}
+
 	#consigna {
 		grid-column: 1 / 5;
+		font-size: 1em;
+		align-self: flex-end;
 	 
 	}
 	
 	#verbaconj {
 		grid-column: 5;
+	}
+
+	#verbo {
+		width: 300px;
+		height: 30px; 
+		font-size: 20px; 
+		
+		border-width: 5px; 
+		border-radius: 5px; 
+		border-color: #ad7fa8; 
 	}
 
 	#headtabprin {
@@ -293,13 +327,11 @@ body {background-color: #d0e5e6;}
 	}
 
 	#personas {
-		grid-column: 1 / 3;
-		justify-self: end;    
-		margin-right: 10px;
+		grid-column: 1 / 4;
 	}
 	
 	#conjugacion {
-		grid-column: 3 / 7;
+		grid-column: 4 / 7;
 		text-align: left;  
 		margin: 0; 
 		padding: 0 ; 
@@ -312,18 +344,18 @@ body {background-color: #d0e5e6;}
 	}
 	
 	#segundapers {
-		grid-column: 7 / 9;
-		text-align: right;  
-		margin-right:  10px;
+		grid-column: 7 / 10;
 	}
 	
 	#segundaconj {
-		grid-column: 9/13;
-		text-align: left;  
-		width: 250px; 
+		grid-column: 10 / 13;
+		text-align: left;   
 		margin: 0; 
 		padding: 0 ; 
 	}
 	
-	
+	.tabconj {
+		font-size: 22px; 
+
+	}
 }
