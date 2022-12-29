@@ -315,12 +315,12 @@ body {background-color: #d0e5e6;}
 #tablaej1 {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	column-gap: 1em;
+	column-gap: 0.6em;
 	background: rgb(211, 215, 207); 
 	border-style: groove; 
-	border-width: 5px; 
-	font-size: 1em;
-	padding: 0.8em;
+	border-width: 3px; 
+	font-size: 0.8em;
+	padding: 0.3em;
 	justify-items: center;
 }
 
@@ -428,9 +428,13 @@ body {background-color: #d0e5e6;}
 	justify-self: start;
 }
 
+.aend {
+	align-self: flex-end;
+}
+
 .input {
-	width: 8;
-	font-size: 0.8em;
+	width: 5em;
+	font-size: 1em;
 }
 
 .botones {
@@ -472,7 +476,7 @@ body {background-color: #d0e5e6;}
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 780px) {
 	#titpag {
 		font-size: 56px; 
 	}
@@ -555,7 +559,13 @@ body {background-color: #d0e5e6;}
 	font-size: 1.2em;
 }
 
+#tablaej1 {
+	column-gap: 0.8em;
+	border-width: 5px; 
+	font-size: 1em;
+	padding: 0.5em;
 
+}
 
 
 
@@ -585,7 +595,7 @@ body {background-color: #d0e5e6;}
 }
 
 .input {
-	width: 8em;
-	font-size: 1em;
+	width: 6em;
+	font-size: 1.2em;
 }
 }
