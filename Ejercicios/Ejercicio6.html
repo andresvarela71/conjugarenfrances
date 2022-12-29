@@ -10,86 +10,118 @@
 	<script type="text/javascript" src="Ejercicios.js" ></script>
 </head>
 <body onload="borrar(6)">
-	<header id="encabezado">
-		<h1 id="titpag">Conjugar en franc&#233;s</h1>
-		<h2 id="indsec">Ejercicios</h2>
-		<hr>
-	</header>
+	<div id="contenedor">
+		<header id="encabezado">
+			<h1 id="titpag">Conjugar en franc&#233;s</h1>
+			<h2 id="indsec">Ejercicios</h2>
+			<hr>
+		</header>
 
-	<nav id="navegacion">
-		<ul id="contbot">
-			<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
-			<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
-			<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
-			<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
-		</ul>
-	</nav>
-	<aside id="columna">
-		<ol id="listas">
+		<nav id="navegacion">
+			<ul id="contbot">
+				<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+				<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+				<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+				<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+			</ul>
+		</nav>
+	
+		<aside id="columna">
+			<ol id="listas">
 			
-		</ol>
-	</aside>
-	<section>
-		<h3  id="kejerc"></h3>
-		<form>
+			</ol>
+	
+		</aside>
+	
+		<section id="secejercicio">
+			<h3  id="kejerc"></h3>
 			<p><span class="negrita">Conjug&#225; los verbos en las personas indicadas:</span><br>
-			<span id="previo" class="ital rojo"></span></p>
+				<span id="previo" class="ital rojo"></span></p>
+			<form>
 			
-			<table id="tablaej1">
-				<tr>
-					<td class="ancho60"></td><th id="verbo0">pleurer</th><td class="ancho60"></td><th id="verbo1">inclure</th><td class="ancho60"></td><th  id="verbo2">rouvrir</th><td class="ancho60"></td><th id="verbo3">assaillir</th><td class="ancho60"></td><th id="verbo4">courir</th>
-				</tr>
-				<tr>
+			
+				<div id="tablaej1">
+					<div class="c1de12"></div>
+					<div class="c2de12" id="verbo0">pleurer</div>
+					<div class="c3de12"></div>
+					<div class="c4de12" id="verbo1">inclure</div>
+					<div class="c5de12"></div>
+					<div class="c6de12" id="verbo2">rouvrir</div>
+					<div class="c7de12"></div>
+					<div class="c8de12" id="verbo3">assaillir</div>
+					<div class="c9de12"></div>
+					<div class="c10de12" id="verbo4">courir</div>
+					<div class="c11de12"></div>
+					<div class="c12de12"></div>
 					
-					<td class="der">je &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(0)"></td>
-					<td class="der">tu &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(1)"></td>
-					<td class="der">tu &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(2)"></td>
-					<td class="der">j'</td><td><input class="ancho100 letra12"  onclick="blanco(3)"></td>
-					<td class="der">tu &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(4)"></td>
-				</tr>
-				<tr>
-					
-					<td class="der">tu &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(5)"></td>
-					<td class="der">il &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(6)"></td>
-					<td class="der">il &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(7)"></td>
-					<td class="der">tu &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(8)"></td>
-					<td class="der">il &nbsp;</td><td><input class="ancho100 letra12"  onclick="blanco(9)"></td>
-				</tr>
-				<tr>
-					
-					<td class="der">nous &nbsp;</td><td><input class="ancho100 letra12"></td>
-					<td class="der">ils &nbsp;</td><td><input class="ancho100 letra12"></td>
-					<td class="der">vous &nbsp;</td><td><input class="ancho100 letra12"></td>
-					<td class="der">elles &nbsp;</td><td><input class="ancho100 letra12"></td>
-					<td class="der">nous &nbsp;</td><td><input class="ancho100 letra12"></td>
-				</tr>
+					<div class="c1de12 jder">je &nbsp;</div>
+					<div class="c2de12"><input class="input"  onclick="blanco(0)"></div>
+					<div class="c3de12 jder">tu &nbsp;</div>
+					<div class="c4de12"><input class="input"  onclick="blanco(1)"></div>
+					<div class="c5de12 jder">tu &nbsp;</div>
+					<div class="c6de12"><input class="input"  onclick="blanco(2)"></div>
+					<div class="c7de12 jder">j'</div>
+					<div class="c8de12"><input class="input"  onclick="blanco(3)"></div>
+					<div class="c9de12 jder">tu &nbsp;</div>
+					<div class="c10de12"><input class="input"  onclick="blanco(4)"></div>
+					<div class="c11de12"></div>
+					<div class="c12de12"></div>
 				
-				<tr>
+					
+					<div class="c1de12 jder">tu &nbsp;</div>
+					<div class="c2de12"><input class="input"  onclick="blanco(5)"></div>
+					<div class="c3de12 jder">il &nbsp;</div>
+					<div class="c4de12"><input class="input"  onclick="blanco(6)"></div>
+					<div class="c5de12 jder">il &nbsp;</div>
+					<div class="c6de12"><input class="input"  onclick="blanco(7)"></div>
+					<div class="c7de12 jder">tu &nbsp;</div>
+					<div class="c8de12"><input class="input"  onclick="blanco(8)"></div>
+					<div class="c9de12 jder">il &nbsp;</div>
+					<div class="c10de12"><input class="input"  onclick="blanco(9)"></div>
+					<div class="c11de12"></div>
+					<div class="c12de12"></div>
+			
+					
+					<div class="c1de12 jder">nous &nbsp;</div>
+					<div><input class="input"></div>
+					<div class="c3de12 jder">ils &nbsp;</div>
+					<div><input class="input"></div>
+					<div class="c5de12 jder">vous &nbsp;</div>
+					<div><input class="input"></div>
+					<div class="c7de12 jder">elles &nbsp;</div>
+					<div><input class="input"></div>
+					<div class="c9de12 der">nous &nbsp;</div>
+					<div><input class="input"></div>
+				
 					
 					
-					<td class="centro" colspan="10">
-					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(6, 'i')">
-					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(6)">
-					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(6)">
-					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+					<div class="c1de1 centro" >
+						<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(6, 'i')">
+						<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(6)">
+						<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(6)">
+						<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
 						
-					</select>
-					</td>
-				</tr>
-				<tr>
-					<td  class="centro" colspan="10"><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
-				</tr>
-				<tr>
-					<td  class="centro" colspan="10"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
-				</tr>
-			</table> 
-		</form>
+						</select>
+					</div>
+				
+					<div  class="c1de1 centro">
+						<input class="label" type="button" value="CORRECTOS" disabled>
+						<input class="label" type="button" value="ERRORES" disabled>
+					</div>
+				
+					<div  class="c1de1 centro">
+						<input class="botres" id="botverde" type="button" value="0" disabled>
+						<input class="botres" id="botrojo" type="button" value="0" disabled>
+					</div>
+				</div>
+			</form>
 		
 		
-	</section>
-	<footer id="pie">
-		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
-	</footer>	
-	<script>crearlista();</script>
+		</section>
+		<footer id="pie">
+			Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+		</footer>	
+		<script>crearlista();</script>
+	</div>
 </body>
 </html>
