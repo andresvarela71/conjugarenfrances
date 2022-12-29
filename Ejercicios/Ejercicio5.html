@@ -10,36 +10,40 @@
 	<script type="text/javascript" src="Ejercicios.js" ></script>
 </head>
 <body onload="borrar(5, 'aleat')">
-	<header id="encabezado">
-		<h1 id="titpag">Conjugar en franc&#233;s</h1>
-		<h2 id="indsec">Ejercicios</h2>
-		<hr>
-	</header>
+	<div id="contenedor">
+		<header id="encabezado">
+			<h1 id="titpag">Conjugar en franc&#233;s</h1>
+			<h2 id="indsec">Ejercicios</h2>
+			<hr>
+		</header>
 
-	<nav id="navegacion">
-		<ul id="contbot">
-			<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
-			<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
-			<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
-			<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
-		</ul>
-	</nav>
-	<aside id="columna">
-		<ol id="listas">
+		<nav id="navegacion">
+			<ul id="contbot">
+				<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+				<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+				<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+				<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+			</ul>
+		</nav>
+	
+		<aside id="columna">
+			<ol id="listas">
 			
-		</ol>
-	</aside>
-	<section>
-		<h3 id="kejerc"></h3>
-		<form>
+			</ol>
+		</aside>
+	
+		<section id="secejercicio">
+			<h3 id="kejerc"></h3>
 			<p><span class="negrita">Indic&#225; qu&#233; pronombres de conjugaci&#243;n corresponden a las siguientes formas verbales.</span><br>
-			(Tu respuesta tiene que cubrir todas las posibilidades)<br>
-			<span id="previo" class="ital rojo"></span></p>
+				(Tu respuesta tiene que cubrir todas las posibilidades)<br>
+				<span id="previo" class="ital rojo"></span></p>
+
+			<form>
 			
-			<table id="tablaej1">
-				<tr>
-					<td class="ancho100"></td>
-					<td>
+				<div id="tablaej1">
+				
+					
+					<div class="c1de2 jder">
 						<select class="letra10" name="respuesta1" id="respuesta1"   onchange="blanco(0)" >
 						<option label=" "> </option>
 						<option> je / tu</option>
@@ -50,145 +54,130 @@
 						<option> vous</option>
 						<option> ils / elles</option>
 						</select>
-					</td>
-					<td ></td>
-					<td id="verbo0"> </td>
-					<td  class="ancho100"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
+					</div>
+					
+					<div class="c2de2 jizq"	id="verbo0"> </div>
+					
+					<div class="c1de2 jder">
 						<select class="letra10" name="respuesta2" id="respuesta2" onchange="blanco(1)">
-						<option label=" "> </option>
-						<option> je / tu</option>
-						<option> tu</option>
-						<option> je / il / elle / on</option>
-						<option> il / elle / on</option>
-						<option> nous</option>
-						<option> vous</option>
-						<option> ils / elles</option>
+							<option label=" "> </option>
+							<option> je / tu</option>
+							<option> tu</option>
+							<option> je / il / elle / on</option>
+							<option> il / elle / on</option>
+							<option> nous</option>
+							<option> vous</option>
+							<option> ils / elles</option>
 						</select>
-					</td>
-					<td></td>
-					<td id="verbo1"> </td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-					<select class="letra10" name="respuesta3" id="respuesta3" onchange="blanco(2)">
-						<option label=" "> </option>
-						<option> je / tu</option>
-						<option> tu</option>
-						<option> je / il / elle / on</option>
-						<option> il / elle / on</option>
-						<option> nous</option>
-						<option> vous</option>
-						<option> ils / elles</option>
-						</select>
-					</td>
-					<td></td>
-					<td id="verbo2"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-					<select class="letra10" name="respuesta4" id="respuesta4" onchange="blanco(3)">
-						<option label=" "> </option>
-						<option> je / tu</option>
-						<option> tu</option>
-						<option> je / il / elle / on</option>
-						<option> il / elle / on</option>
-						<option> nous</option>
-						<option> vous</option>
-						<option> ils / elles</option>
-						</select>
-					</td>
-					<td></td>
-					<td id="verbo3"></td>
-					<td ></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-					<select class="letra10" name="respuesta5" id="respuesta5" onchange="blanco(4)">
-						<option label=" "> </option>
-						<option> je / tu</option>
-						<option> tu</option>
-						<option> je / il / elle / on</option>
-						<option> il / elle / on</option>
-						<option> nous</option>
-						<option> vous</option>
-						<option> ils / elles</option>
-						</select>
-					</td>
-					<td></td>
-					<td id="verbo4"></td>
-					<td ></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-					<select class="letra10" name="respuesta6" id="respuesta6" onchange="blanco(5)">
-						<option label=" "> </option>
-						<option> je / tu</option>
-						<option> tu</option>
-						<option> je / il / elle / on</option>
-						<option> il / elle / on</option>
-						<option> nous</option>
-						<option> vous</option>
-						<option> ils / elles</option>
-						</select>
-					</td>
-					<td></td>
-					<td id="verbo5"></td>
-					<td ></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-					<select class="letra10" name="respuesta6" id="respuesta7" onchange="blanco(6)">
-						<option label=" "> </option>
-						<option> je / tu</option>
-						<option> tu</option>
-						<option> je / il / elle / on</option>
-						<option> il / elle / on</option>
-						<option> nous</option>
-						<option> vous</option>
-						<option> ils / elles</option>
-						</select>
-					</td>
-					<td></td>
-					<td id="verbo6"></td>
-					<td ></td>
-				</tr>
-				<tr>
+					</div>
 					
-					<td class="centro" colspan="5" id="botabla">
-					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(5, 's', 'aleat')">
-					<input class="letra10 margenes botones"  type="reset" value="Borrar" onclick="borrar(5, 'aleat')">
-					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(5, 'aleat')">
-					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+					<div class="c2de2 jizq" id="verbo1"> </div>
+					
+					<div class="c1de2 jder">
+						<select class="letra10" name="respuesta3" id="respuesta3" onchange="blanco(2)">
+							<option label=" "> </option>
+							<option> je / tu</option>
+							<option> tu</option>
+							<option> je / il / elle / on</option>
+							<option> il / elle / on</option>
+							<option> nous</option>
+							<option> vous</option>
+							<option> ils / elles</option>
+						</select>
+					</div>
+			
+					<div class="c2de2 jizq" id="verbo2"></div>
+				
+					<div class="c1de2 jder">
+						<select class="letra10" name="respuesta4" id="respuesta4" onchange="blanco(3)">
+							<option label=" "> </option>
+							<option> je / tu</option>
+							<option> tu</option>
+							<option> je / il / elle / on</option>
+							<option> il / elle / on</option>
+							<option> nous</option>
+							<option> vous</option>
+							<option> ils / elles</option>
+						</select>
+					</div>
+					
+					<div class="c2de2 jizq" id="verbo3"></div>
+					
+					<div class="c1de2 jder">
+						<select class="letra10" name="respuesta5" id="respuesta5" onchange="blanco(4)">
+							<option label=" "> </option>
+							<option> je / tu</option>
+							<option> tu</option>
+							<option> je / il / elle / on</option>
+							<option> il / elle / on</option>
+							<option> nous</option>
+							<option> vous</option>
+							<option> ils / elles</option>
+						</select>
+					</div>
+					
+					<div class="c2de2 jizq" id="verbo4"></div>
+					
+					<div class="c1de2 jder">
+						<select class="letra10" name="respuesta6" id="respuesta6" onchange="blanco(5)">
+							<option label=" "> </option>
+							<option> je / tu</option>
+							<option> tu</option>
+							<option> je / il / elle / on</option>
+							<option> il / elle / on</option>
+							<option> nous</option>
+							<option> vous</option>
+							<option> ils / elles</option>
+						</select>
+					</div>
+			
+					<div class="c2de2 jizq" id="verbo5"></div>
+					
+					<div class="c1de2 jder">
+						<select class="letra10" name="respuesta6" id="respuesta7" onchange="blanco(6)">
+							<option label=" "> </option>
+							<option> je / tu</option>
+							<option> tu</option>
+							<option> je / il / elle / on</option>
+							<option> il / elle / on</option>
+							<option> nous</option>
+							<option> vous</option>
+							<option> ils / elles</option>
+						</select>
+					</div>
+			
+					<div class="c2de2 jizq" id="verbo6"></div>
+				
+				
+					
+					<div class="c1de1 centro" id="botabla">
+						<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(5, 's', 'aleat')">
+						<input class="letra10 margenes botones"  type="reset" value="Borrar" onclick="borrar(5, 'aleat')">
+						<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(5, 'aleat')">
+						<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
 						
-					</select>
-					</td>
+						</select>
+					</div>
 					
-				</tr>
-				<tr>
-					<td  class="centro" colspan="5"><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
-				</tr>
-				<tr>
-					<td  class="centro" colspan="5"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
-				</tr>
-			</table> 
-		</form>
+					<div  class="c1de1 centro">
+						<input class="label" type="button" value="CORRECTOS" disabled>
+						<input class="label" type="button" value="ERRORES" disabled>
+					</div>
+					<div class="c1de1 centro">
+						<input class="botres" id="botverde" type="button" value="0" disabled>
+						<input class="botres" id="botrojo" type="button" value="0" disabled>
+					</div>
+				</div> 
+		
+			</form>
 		
 		
-	</section>
-	<footer id="pie">
-		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
-	</footer>	
-	<script>crearlista();</script>
+	
+		</section>
+		<footer id="pie">
+			Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+		</footer>	
+		<script>crearlista();</script>
+	</div>
 </body>
 </html>
