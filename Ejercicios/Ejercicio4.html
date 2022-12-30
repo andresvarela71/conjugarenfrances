@@ -34,42 +34,56 @@
 	
 		<section id="secejercicio">
 			<h3 id="kejerc"></h3>
-			<form>
-				<p><span class="negrita">Conjug&#225; los verbos en las tres personas del singular:</span><br>
+			<p><span class="negrita">Conjug&#225; los verbos en las tres personas del singular:</span><br>
 				<span id="previo" class="ital rojo"></span></p>
+
+			<form>
+				
 			
 				<div id="tablaej1">
+					<div id="maxcont">
+						
+						<div class="minicont">
+							<div class="c1de6 letra8">pers.<br>sing.</div><div class="c2de6" id="verbo0">saluer</div>
+							<div class="c1de6 letra8">1&#170;</div><div class="c2de6"><input class="input"  onclick="blanco(0)" autofocus></div>
+							<div class="c1de6 letra8">2&#170;</div><div class="c2de6"><input class="input"   onclick="blanco(1)" ></div>
+							<div class="c1de6 letra8">3&#170;</div><div class="c2de6"><input class="input"   onclick="blanco(2)" ></div>
+						</div>
 					
-					<div class="c1de6">pers. sing.</div>
-					<div class="c2de6" id="verbo0">saluer</div>
-					<div class="c3de6" id="verbo1">parcourir</div>
-					<div class="c4de6" id="verbo2">offrir</div>
-					<div class="c5de6" id="verbo3">tressaillir</div>
-					<div class="c6de6" id="verbo4">rire</div>
-				
-					<div class="c1de6">1&#170;</div>
-					<div class="c2de6"><input class="input"  onclick="blanco(0)" autofocus></div>
-					<div class="c3de6"><input class="input"  onclick="blanco(1)"  ></div>
-					<div class="c4de6"><input class="input"  onclick="blanco(2)"  ></div>
-					<div class="c5de6"><input class="input"  onclick="blanco(3)"  ></div>
-					<div class="c6de6"><input class="input"  onclick="blanco(4)" ></div>
-				
-					<div class="c1de6">2&#170;</div>
-					<div class="c2de6"><input class="input"   onclick="blanco(5)" ></div>
-					<div class="c3de6"><input class="input"   onclick="blanco(6)" ></div>
-					<div class="c4de6"><input class="input"   onclick="blanco(7)" ></div>
-					<div class="c5de6"><input class="input"   onclick="blanco(8)" ></div>
-					<div class="c6de6"><input class="input"   onclick="blanco(9)" ></div>
-					
-					<div class="c1de6">3&#170;</div>
-					<div class="c2de6"><input class="input"   onclick="blanco(10)" ></div>
-					<div class="c3de6"><input class="input"   onclick="blanco(11)" ></div>
-					<div class="c4de6"><input class="input"   onclick="blanco(12)" ></div>
-					<div class="c5de6"><input class="input"   onclick="blanco(13)" ></div>
-					<div class="c6de6"><input class="input"   onclick="blanco(14)" ></div>
+						<div class="minicont">
+							<div class="c1de6 letra8">pers.<br>sing.</div><div class="c3de6" id="verbo1">parcourir</div>
+							<div class="c1de6 letra8">1&#170;</div><div class="c3de6"><input class="input"  onclick="blanco(3)"  ></div>
+							<div class="c1de6 letra8">2&#170;</div><div class="c3de6"><input class="input"   onclick="blanco(4)" ></div>
+							<div class="c1de6 letra8">3&#170;</div><div class="c3de6"><input class="input"   onclick="blanco(5)" ></div>
+						</div>
 
-					<div class="c1de1 centro" colspan="6">
-						<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(4, 'i')">
+						<div class="minicont">
+							<div class="c1de6 letra8">pers.<br>sing.</div><div class="c4de6" id="verbo2">offrir</div>
+							<div class="c1de6 letra8">1&#170;</div><div class="c4de6"><input class="input"  onclick="blanco(6)"  ></div>
+							<div class="c1de6 letra8">2&#170;</div><div class="c4de6"><input class="input"   onclick="blanco(7)" ></div>
+							<div class="c1de6 letra8">3&#170;</div><div class="c4de6"><input class="input"   onclick="blanco(8)" ></div>
+						</div>
+
+						<div class="minicont">
+							<div class="c1de6 letra8">pers.<br>sing.</div><div class="c5de6" id="verbo3">tressaillir</div>
+							<div class="c1de6 letra8">1&#170;</div><div class="c5de6"><input class="input"  onclick="blanco(9)"  ></div>
+							<div class="c1de6 letra8">2&#170;</div><div class="c5de6"><input class="input"   onclick="blanco(10)" ></div>
+							<div class="c1de6 letra8">3&#170;</div><div class="c5de6"><input class="input"   onclick="blanco(11)" ></div>
+						</div>
+							
+						<div class="minicont">
+							<div class="c1de6 letra8">pers.<br>sing.</div><div class="c6de6" id="verbo4">rire</div>
+							<div class="c1de6 letra8">1&#170;</div><div class="c6de6"><input class="input"  onclick="blanco(12)" ></div>
+							<div class="c1de6 letra8">2&#170;</div><div class="c6de6"><input class="input"   onclick="blanco(13)" ></div>
+							<div class="c1de6 letra8">3&#170;</div><div class="c6de6"><input class="input"   onclick="blanco(14)" ></div>
+						</div>
+					
+					</div>
+					
+					
+
+					<div class="c1de1 centro">
+						<input class="botones" type="button" value="Corregir" onclick="corregir(4, 'i')">
 						<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(4)">
 						<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(4)">
 						<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
@@ -77,15 +91,19 @@
 						</select>
 					</div>
 				
-					<div  class="c1de1 centro">
-						<input class="label" type="button" value="CORRECTOS" disabled>
-						<input class="label" type="button" value="ERRORES" disabled>
+					<div  id="contador">
+						<div class="lyb">
+							<input class="label" type="button" value="CORRECTOS" disabled>
+							<input class="botres" id="botverde" type="button" value="0" disabled>
+						</div>
+						
+						<div  class="lyb">
+							<input class="label" type="button" value="ERRORES" disabled>
+							<input class="botres" id="botrojo" type="button" value="0" disabled>
+						</div>
 					</div>
 
-					<div  class="c1de1 centro">
-						<input class="botres" id="botverde" type="button" value="0" disabled>
-						<input class="botres" id="botrojo" type="button" value="0" disabled>
-					</div>
+					
 
 				</div>
 			</form>

@@ -45,7 +45,7 @@
 					<div class="c1de2 jder" id="verbo0"> </div>
 						
 					<div class="c2de2 jizq">
-						<select name="respuesta1" id="respuesta1" class="letra10 margenes"  onchange="blanco(0)">
+						<select name="respuesta1" id="respuesta1" class="input"  onchange="blanco(0)">
 							<option label=" "> </option>
 							<option> des(a)</option>
 							<option> des(b)</option>
@@ -55,7 +55,7 @@
 					
 					<div class="c1de2 jder" id="verbo1"> </div>
 					<div class="c2de2 jizq">
-						<select name="respuesta2" id="respuesta2" class="letra10 margenes"  onchange="blanco(1)">
+						<select name="respuesta2" id="respuesta2" class="input"  onchange="blanco(1)">
 							<option label=" "> </option>
 							<option> des(a)</option>
 							<option> des(b)</option>
@@ -65,7 +65,7 @@
 					
 					<div class="c1de2 jder" id="verbo2"></div>
 					<div class="c2de2 jizq">
-						<select name="respuesta3" id="respuesta3" class="letra10 margenes"  onchange="blanco(2)">
+						<select name="respuesta3" id="respuesta3" class="input"  onchange="blanco(2)">
 							<option  label=" "> </option>
 							<option> des(a)</option>
 							<option> des(b)</option>
@@ -75,7 +75,7 @@
 					
 					<div class="c1de2 jder" id="verbo3"></div>
 					<div class="c2de2 jizq">
-						<select name="respuesta4" id="respuesta4" class="letra10 margenes"  onchange="blanco(3)">
+						<select name="respuesta4" id="respuesta4" class="input"  onchange="blanco(3)">
 							<option  label=" "> </option>
 							<option> des(a)</option>
 							<option> des(b)</option>
@@ -85,7 +85,7 @@
 				
 					<div class="c1de2 jder" id="verbo4"></div>
 					<div class="c2de2 jizq">
-						<select name="respuesta5" id="respuesta5" class="letra10 margenes"  onchange="blanco(4)">
+						<select name="respuesta5" id="respuesta5" class="input"  onchange="blanco(4)">
 							<option  label=" "> </option>
 							<option> des(a)</option>
 							<option> des(b)</option>
@@ -95,7 +95,7 @@
 					
 					<div class="c1de2 jder" id="verbo5"></div>
 					<div class="c2de2 jizq">					
-						<select name="respuesta6" id="respuesta6" class="letra10 margenes"  onchange="blanco(5)">
+						<select name="respuesta6" id="respuesta6" class="input"  onchange="blanco(5)">
 							<option label=" "> </option>
 							<option> des(a)</option>
 							<option> des(b)</option>
@@ -105,7 +105,7 @@
 					
 					<div class="c1de2 jder" id="verbo6"></div>
 					<div class="c2de2 jizq">
-						<select name="respuesta7" id="respuesta7" class="letra10 margenes"  onchange="blanco(6)">
+						<select name="respuesta7" id="respuesta7" class="input"  onchange="blanco(6)">
 							<option  label=" "> </option>
 							<option> des(a)</option>
 							<option> des(b)</option>
@@ -124,14 +124,17 @@
 						</select>
 					</div>
 				
-					<div class="c1de1 centro">
-						<input class="label" type="button" value="CORRECTOS" disabled>
-						<input class="label" type="button" value="ERRORES" disabled>
-					</div>	
-
-					<div class="c1de1 centro">
-						<input class="botres" id="botverde" type="button" value="0" disabled>
-						<input class="botres" id="botrojo" type="button" value="0" disabled>
+					<div  id="contador">
+						<div class="lyb">
+							<input class="label" type="button" value="CORRECTOS" disabled>
+							<input class="botres" id="botverde" type="button" value="0" disabled>
+						</div>
+						
+						<div  class="lyb">
+							<input class="label" type="button" value="ERRORES" disabled>
+							<input class="botres" id="botrojo" type="button" value="0" disabled>
+						</div>
+						
 					</div>
 				</div>
 			</form>

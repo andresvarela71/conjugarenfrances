@@ -326,7 +326,7 @@ body {background-color: #d0e5e6;}
 
 #maxcont {
 	
-	grid-column: 1 / span 13;
+	grid-column: 1 / span 12;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -456,13 +456,28 @@ body {background-color: #d0e5e6;}
 	font-size: 1em;
 }
 
+#contador {
+	display: flex;
+	grid-column: 1 / span 12;
+	column-gap: 3em;
+}
+
+.lyb {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	justify-items: center;
+}
+
 .botones {
 	border-width: 3px; 
 	border-radius: 7px;  
 	border-color: blue; 
 	background-color:  #00ffff; 
 	margin-top: 7px; 
-	margin-bottom: 7px;}
+	margin-bottom: 7px;
+	font-size: 1em;
+}
 
 
 .label { 
@@ -471,8 +486,7 @@ body {background-color: #d0e5e6;}
 	font-weight: bold; 
 	color: black; 
 	background-color: transparent; 
-	margin-left: 7px; 
-	margin-right: 7px;
+	font-size: 0.8em;
 }
 
 .botres {
@@ -481,14 +495,12 @@ body {background-color: #d0e5e6;}
 	height: 50px; 
 	font-size: 2em; 
 	color: black; 
-	margin-left: 16px; 
-	margin-right: 16px;
 }
 
 .botones:hover {background-color: blue ; color: aqua; cursor: pointer;}
 #botverde {background-color: green;}
 #botrojo {background-color: red;}
-#contador {display: block;}
+/*#contador {display: block;}*/
 #ejercicio {text-align: center;}
 /*#botabla {margin-left: auto; margin-right: auto;}*/
 
@@ -600,8 +612,7 @@ body {background-color: #d0e5e6;}
 .label { 
 
 	width: 100px; 
-	margin-left: 10px; 
-	margin-right: 10px;
+
 }
 
 .botres {
@@ -609,8 +620,7 @@ body {background-color: #d0e5e6;}
 	width: 70px; 
 	height: 70px; 
 	font-size: 3em; 
-	margin-left: 26px; 
-	margin-right: 26px;
+
 }
 
 .input {
