@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+
 header, section, footer, aside, nav, article, figure, figcaption,
 hgroup {display: block; margin: 0px; padding: 0px; }
 
@@ -278,6 +279,7 @@ body {background-color: #d0e5e6;}
 .letra10 {font-size: 1em;}
 .letra8 {font-size: 0.8em;}
 
+
 #tabla {background: rgb(211, 215, 207); border-style: groove; border-width: 5px; width: 1200px; height: 500px}
 #tittab {height: 30px;}
 
@@ -308,7 +310,7 @@ body {background-color: #d0e5e6;}
 #secejercicio {
 	grid-column: 1 / 7;
 	grid-row: 3;
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 
@@ -319,7 +321,7 @@ body {background-color: #d0e5e6;}
 	background: rgb(211, 215, 207); 
 	border-style: groove; 
 	border-width: 3px; 
-	font-size: 0.8em;
+	font-size: 0.9em;
 	padding: 0.3em;
 	justify-items: center;
 }
@@ -454,6 +456,10 @@ body {background-color: #d0e5e6;}
 .input {
 	width: 5em;
 	font-size: 1em;
+}
+
+.xl {
+	width: 7em;
 }
 
 #contador {
@@ -627,4 +633,5 @@ body {background-color: #d0e5e6;}
 	width: 6em;
 	font-size: 1.2em;
 }
+
 }
