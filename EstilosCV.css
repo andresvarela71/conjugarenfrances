@@ -295,7 +295,7 @@ body {background-color: #d0e5e6;}
 #listas li:hover {color: yellow; cursor: pointer;}
 
 #tapadelibro {float: left; margin-right: 10px;}
-#sarasa p {margin-left: 10px;}
+
 
 
 /* -------------- EJERCICIOS -------------- */
@@ -505,6 +505,18 @@ body {background-color: #d0e5e6;}
 	font-size: 2em; 
 	color: black; 
 }
+
+/* -------------- CONJUGADOR -------------- */
+
+#sobrelibro {
+	grid-column: 1 / 7;
+}
+
+#sarasa p {
+
+	margin-left: 1em;
+}
+
 
 .botones:hover {background-color: blue ; color: aqua; cursor: pointer;}
 #botverde {background-color: green;}
