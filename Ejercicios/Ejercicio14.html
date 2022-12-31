@@ -10,81 +10,107 @@
 	<script type="text/javascript" src="Ejercicios.js"></script>
 </head>
 <body onload="borrar(14)">
-	<header id="encabezado">
-		<h1 id="titpag">Conjugar en franc&#233;s</h1>
-		<h2 id="indsec">Ejercicios</h2>
-		<hr>
-	</header>
+	<div id="contenedor"></div>
+		<header id="encabezado">
+			<h1 id="titpag">Conjugar en franc&#233;s</h1>
+			<h2 id="indsec">Ejercicios</h2>
+			<hr>
+		</header>
 
-	<nav id="navegacion">
-		<ul id="contbot">
-			<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
-			<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
-			<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
-			<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
-		</ul>
-	</nav>
-	<aside id="columna">
-		<ol id="listas">
+		<nav id="navegacion">
+			<ul id="contbot">
+				<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+				<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+				<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+				<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+			</ul>
+		</nav>
+	
+		<aside id="columna">
+			<ol id="listas">
 			
-		</ol>
-	</aside>
-	<section>
-		<h3 id="kejerc"></h3>
-		<form>
+			</ol>
+		</aside>
+		
+		<section id="secejercicio">
+			<h3 id="kejerc"></h3>
 			<p><span class="negrita">Conjug&#225; los verbos en las personas indicadas:</span><br>
-			<span id="previo" class="ital rojo"></span></p>
+				<span id="previo" class="ital rojo"></span></p>
 			
-			<table id="tablaej1">
-				<tr>
-					<td class="ancho60"></td><th id="verbo0">&#233;crire</th><td class="ancho60"></td><th id="verbo1">dire</th><td class="ancho60"></td><th id="verbo2">sourire</th><td class="ancho60"></td><th id="verbo3">proscrire</th><td class="ancho60"></td><th id="verbo4">cuire</th>
-				</tr>
-				<tr>
-					
-					<td class="der">j' </td><td><input class="ancho6em letra12" onclick="blanco(0)" onclick="blanco(0)" onblur="input(0)" autofocus></td>
-					<td class="der">nous &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(1)" onblur="input(1)"></td>
-					<td class="der">tu &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(2)" onblur="input(2)"></td>
-					<td class="der">il &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(3)" onblur="input(3)"></td>
-					<td class="der">je &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(4)"  onblur="input(4)"></td>
-				</tr>
-				<tr>
-					
-					<td class="der">nous &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(5)" onblur="input(5)"></td>
-					<td class="der">vous &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(6)"  onblur="input(6)"></td>
-					<td class="der">ils &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(7)" onblur="input(7)"></td>
-					<td class="der">nous &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(8)" onblur="input(8)"></td>
-					<td class="der">vous &nbsp;</td><td><input class="ancho6em letra12" onclick="blanco(9)" onblur="input(9)"></td>
-				</tr>
-				
-				
-				<tr>
-					<td class="centro" colspan="9">
-					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(14, 'i')">
-					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(14)">
-					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(14)">
-					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+				<form>
+			
+			
+					<div id="tablaej1">
+						<div id="maxcont">
+							<div class="minicont">
+								<div></div><div id="verbo0">&#233;crire</div>
+								<div class="der">j' </div><div><input class="input" onclick="blanco(0)" onblur="input(0)" autofocus></div>
+								<div class="der">nous &nbsp;</div><div><input class="input" onclick="blanco(1)" onblur="input(1)"></div>
+							</div>
 						
-					</select>
-					</td>
-					<td><input class="letra10  botones" type="button" value="&#233;" onclick="agregarcar('eag')"></td>
-				</tr>
+							<div class="minicont">
+								<div></div><div id="verbo0">dire</div>
+								<div class="der">nous </div><div><input class="input" onclick="blanco(2)" onblur="input(2)" ></div>
+								<div class="der">vous &nbsp;</div><div><input class="input" onclick="blanco(3)" onblur="input(3)"></div>
+							</div>
+					
+							<div class="minicont">
+								<div></div><div id="verbo0">sourire</div>
+								<div class="der">tu </div><div><input class="input" onclick="blanco(4)" onblur="input(4)" ></div>
+								<div class="der">ils &nbsp;</div><div><input class="input" onclick="blanco(5)" onblur="input(5)"></div>
+							</div>
+
+							<div class="minicont">
+								<div></div><div id="verbo0">proscrire</div>
+								<div class="der">il </div><div><input class="input" onclick="blanco(6)" onblur="input(6)" ></div>
+								<div class="der">nous &nbsp;</div><div><input class="input" onclick="blanco(7)" onblur="input(7)"></div>
+							</div>
+
+							<div class="minicont">
+								<div></div><div id="verbo0">cuire</div>
+								<div class="der">je </div><div><input class="input" onclick="blanco(8)" onblur="input(8)" autofocus></div>
+								<div class="der">vous &nbsp;</div><div><input class="input" onclick="blanco(9)" onblur="input(9)"></div>
+							</div>
+						</div>
+					
+						<div class="c1de1">
+							<input class="botones" type="button" value="&#233;" onclick="agregarcar('eag')">
+						</div>
 				
-				<tr>
-					<td  class="centro" colspan="10"><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
-				</tr>
-				<tr>
-					<td  class="centro" colspan="10"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
-				</tr>
-			</table> 
-		</form>
-	</section>
+				
+						<div class="c1de1">
+							<input class="botones" type="button" value="Corregir" onclick="corregir(14, 'i')">
+							<input class="botones" type="reset" value="Borrar" onclick="borrar(14)">
+							<input class="botones" type="button" value="Mostrar" onclick="mostrar(14)">
+							<select class="botones" id="ayuda" onchange="impayuda()">
+						
+							</select>
+						</div>
+
+				
+						<div  id="contador">
+							<div class="lyb">
+								<input class="label" type="button" value="CORRECTOS" disabled>
+								<input class="botres" id="botverde" type="button" value="0" disabled>
+							</div>
+					
+							<div  class="lyb">
+								<input class="label" type="button" value="ERRORES" disabled>
+								<input class="botres" id="botrojo" type="button" value="0" disabled>
+							</div>
+						</div>
+					</div> 
+				</form>
+		</section>
 	
 			
 	
-	<footer id="pie">
-		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
-	</footer>	
-	<script>crearlista();</script>
+		<footer id="pie">
+			Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+		</footer>	
+	
+		<script>crearlista();</script>
+	</div>
 </body>
 </html>
 
