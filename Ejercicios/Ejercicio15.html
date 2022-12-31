@@ -10,69 +10,88 @@
 	<script type="text/javascript" src="Ejercicios.js"></script>
 </head>
 <body onload="borrar(15, 'aleat')">
-	<header id="encabezado">
-		<h1 id="titpag">Conjugar en franc&#233;s</h1>
-		<h2 id="indsec">Ejercicios</h2>
-		<hr>
-	</header>
+	<div id="contenedor">
+		<header id="encabezado">
+			<h1 id="titpag">Conjugar en franc&#233;s</h1>
+			<h2 id="indsec">Ejercicios</h2>
+			<hr>
+		</header>
 
-	<nav id="navegacion">
-		<ul id="contbot">
-			<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
-			<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
-			<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
-			<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
-		</ul>
-	</nav>
+		<nav id="navegacion">
+			<ul id="contbot">
+				<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+				<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+				<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+				<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+			</ul>
+		</nav>
 	
-	<aside id="columna">
-		<ol id="listas">
+		<aside id="columna">
+			<ol id="listas">
 			
-		</ol>
-	</aside>
-	<section>
-		<h3  id="kejerc"></h3>
-		<form>
+			</ol>
+		</aside>
+	
+		<section id="secejercicio">
+			<h3  id="kejerc"></h3>
 			<p><span class="negrita">Indic&#225; la terminaci&#243;n de cada verbo:</span><br>
-			<span id="previo" class="ital rojo"></span></p>
-			<table  id="tablaej1">
-			<tr><td class="ancho100"></td><td id="verbo0"></td><td><input class="margenes ancho60 letra12"  onclick="blanco(0)"></td><td class="ancho100"></tr>
-			<tr><td class="ancho100"></td><td id="verbo1"></td><td><input class="margenes ancho60 letra12" onclick="blanco(1)"></td><td class="ancho100"></tr>
-			<tr><td class="ancho100"></td><td id="verbo2"></td><td><input class="margenes ancho60 letra12" onclick="blanco(2)"></td><td class="ancho100"></tr>
-			<tr><td class="ancho100"></td><td id="verbo3"></td><td><input class="margenes ancho60 letra12" onclick="blanco(3)"></td><td class="ancho100"></tr>
-			<tr><td class="ancho100"></td><td id="verbo4"></td><td><input class="margenes ancho60 letra12" onclick="blanco(4)"></td><td class="ancho100"></tr>
-			<tr><td class="ancho100"></td><td id="verbo5"></td><td><input class="margenes ancho60 letra12" onclick="blanco(5)"></td><td class="ancho100"></tr>
-			<tr><td class="ancho100"></td><td id="verbo6"></td><td><input class="margenes ancho60 letra12"  onclick="blanco(6)"></td><td class="ancho100"></tr>
-			<tr><td class="ancho100"></td><td id="verbo7"></td><td><input class="margenes ancho60 letra12" onclick="blanco(7)"></td><td class="ancho100"></tr>
+				<span id="previo" class="ital rojo"></span></p>
+				
+			<form>
+				<div  id="tablaej1">
+					
+					<div id="verbo0" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input"  onclick="blanco(0)"></div>
+					<div id="verbo1" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input" onclick="blanco(1)"></div>
+					<div id="verbo2" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input" onclick="blanco(2)"></div>
+					<div id="verbo3" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input" onclick="blanco(3)"></div>
+					<div id="verbo4" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input" onclick="blanco(4)"></div>
+					<div id="verbo5" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input" onclick="blanco(5)"></div>
+					<div id="verbo6" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input"  onclick="blanco(6)"></div>
+					<div id="verbo7" class="c1de2 jder"></div><div class="c2de2 jizq"><input class="input" onclick="blanco(7)"></div>
+
+
+
+						
+
+
+
+					
+			
 				
 									
-				<tr>	
-					<td class="centro" colspan="4">
-					<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(15, 'i', 'aleat')">
-					<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(15, 'aleat')">
-					<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(15, 'aleat')">
-					<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
+					<div class="c1de1">
+						<input class="letra10 margenes botones" type="button" value="Corregir" onclick="corregir(15, 'i', 'aleat')">
+						<input class="letra10 margenes botones" type="reset" value="Borrar" onclick="borrar(15, 'aleat')">
+						<input class="letra10 margenes botones" type="button" value="Mostrar" onclick="mostrar(15, 'aleat')">
+						<select class="letra10 margenes botones" id="ayuda" onchange="impayuda()">
 						
-					</select>
-					</td>
-				</tr>
-				<tr>
-					<td  class="centro" colspan="4" ><input class="label" type="button" value="CORRECTOS" disabled><input class="label" type="button" value="ERRORES" disabled></td>
-				</tr>
-				<tr>
-					<td  class="centro"  colspan="4"><input class="botres" id="botverde" type="button" value="0" disabled><input class="botres" id="botrojo" type="button" value="0" disabled></td>
-				</tr>
-			</table>
-		</form>
-	</section>
+						</select>
+					</div>
+				
+					<div  id="contador">
+						<div class="lyb">
+							<input class="label" type="button" value="CORRECTOS" disabled>
+							<input class="botres" id="botverde" type="button" value="0" disabled>
+						</div>
+						
+						<div  class="lyb">
+							<input class="label" type="button" value="ERRORES" disabled>
+							<input class="botres" id="botrojo" type="button" value="0" disabled>
+						</div>
+					</div>
+				</div>	
+			
+			</form>
+		</section>
 	
-	<section>
+		<section>
 		
 	
-	</section>
-	<footer id="pie">
-		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
-	</footer>	
-	<script>crearlista();</script>
+		</section>
+		<footer id="pie">
+			Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+		</footer>	
+		<script>crearlista();</script>
+	</div>	
 </body>
 </html>
