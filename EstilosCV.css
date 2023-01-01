@@ -460,6 +460,10 @@ body {background-color: #d0e5e6;}
 }
 
 .xl {
+	width: 8em;
+}
+
+.xxl {
 	width: 9em;
 }
 
@@ -650,7 +654,10 @@ body {background-color: #d0e5e6;}
 }
 
 .xl {
-	width: 8em;
+	width: 7em;
 }
 
+.xxl {
+	width: 8em;
+}
 }

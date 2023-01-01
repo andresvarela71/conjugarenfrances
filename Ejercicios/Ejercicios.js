@@ -65,7 +65,7 @@ video[18] = ["5", "22"];
  solucion[14] = ["\u00e9cris", "\u00e9crivons", "disons", "dites", "souris", "sourient", "proscrit", "proscrivons", "cuis", "cuisez"];
  solucion[15] = ["re","ir", "re","re", "ir", "tre", "r", "r"];
  solucion[16] = ["v","\u00d8", "\u00d8","s", "\u00d8", "ss", "ss", "ss"];
- solucion[17] = ["transcris","suffis", "enorgueillis","nais", "m\u00e9dit", "transcrivons", "suffisent", "enorgueillissez", "naissent", "médisez"];
+ solucion[17] = ["transcris", "transcrivons","suffis", "suffisent", "enorgueillis", "enorgueillissez", "nais",  "naissent", "m\u00e9dit",  "médisez"];
  solucion[18] = [["pa\u00eet", "pait"], "disent", "assaille","prescrit", "vieillis", "paissent", "dites", "assaillent", "prescrivez", "vieillissons"]; //solalt[18] = ["pait","disent", "assaille","prescrit", "vieillis", "paissent", "dites", "assaillent", "prescrivez", "vieillissons"]
  
 
