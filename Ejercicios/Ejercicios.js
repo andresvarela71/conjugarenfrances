@@ -23,7 +23,8 @@
  nomejer[16] = ["Marca de plural IV"];
  nomejer[17] = ["Marca de plural V"];
  nomejer[18] = ["Marca de plural VI"];
- nomejer[19] = ["La yod I"];
+ nomejer[19] = ["Marca de plural VII"];
+ nomejer[20] = ["La yod I"];
   
 var video = [];							// videos que es necesario haber visto para realizar el ejercicio
 video[1] = ["1", "14"];					// el 2do elemento corresponde a las paginas del libro que es necesario haber leido
@@ -44,7 +45,8 @@ video[15] = ["5", "22"];
 video[16] = ["5", "22"];
 video[17] = ["5", "22"];
 video[18] = ["5", "22"];
-video[19] = ["6", "25"];
+video[19] = ["6", "23"];
+video[20] = ["7", "25"];
 
  var cantejer = nomejer.length - 1;				// cantidad de ejercicios disponibles
 
@@ -68,7 +70,8 @@ video[19] = ["6", "25"];
  solucion[16] = ["v","\u00d8", "\u00d8","s", "\u00d8", "ss", "ss", "ss"];
  solucion[17] = ["transcris", "transcrivons","suffis", "suffisent", "enorgueillis", "enorgueillissez", "nais",  "naissent", "m\u00e9dit",  "m\u00e9disez"];
  solucion[18] = [["pa\u00eet", "pait"], "paissent", "disent", "dites", "assaille",  "assaillent", "prescrit", "prescrivez", "vieillis",   "vieillissons"]; //solalt[18] = ["pait","disent", "assaille","prescrit", "vieillis", "paissent", "dites", "assaillent", "prescrivez", "vieillissons"]
- solucion[19] = ["essuies", "essuyez", "fuit", "fuyons", "sourit",  "sourions", "trait", "trayez", "grasseye", "grasseyons"];
+ solucion[19] = ["t", "\u00d8", "ss", "ill", "t", "t", "\u00d8", "v"]
+ solucion[20] = ["essuies", "essuyez", "fuit", "fuyons", "sourit",  "sourions", "trait", "trayez", "grasseye", "grasseyons"];
 
  
 var textofijo = [];					// Parte de ejercicios aleatorios que acompaña al cuadro de respuesta
@@ -77,7 +80,7 @@ textofijo[3] = ["interrompre", "supposer", "na\u00eetre", "appauvrir", "d\u00e9c
 textofijo[5] = ["travaillent", "court", "inclus", "\u00e9tudions", "arrive", "m\u00e8nes", "regardez" ];
 textofijo[15] = ["souscrire", "accueillir", "sourire", "produire", "d\u00e9couvrir", "para\u00eetre", "vieillir", "choisir"  ];
 textofijo[16] = ["souscrire", "accueillir", "sourire", "produire", "d\u00e9couvrir", "para\u00eetre", "vieillir", "choisir"  ];
-
+textofijo[19] = ["sentir", "tressaillir", "jaillir", "bouillir", "mettre", "vetir", "parcourir", "vivre" ];
 
 
 var ayuda = [];
@@ -99,7 +102,8 @@ ayuda[15] = ["RG", "RG", "RG", "RG", "RG", "La terminaci\u00f3n de los verbos en
 ayuda[16] = ["\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", "Verbo en '-illir'", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'? \n Es un verbo que sab\u00e9s conjugar desde el video 1", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", "Verbo en '-ouvrir'.", "Verbo en '-a\u00eetre / o\u00eetre'" , "Cuatro verbos en 'illir' pertenecen al grupo de verbos en '-ir [ir]'.", "Verbo en '-ir [ir].'"]; 
 ayuda[17] = ["\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", 	"Cuatro verbos en 'illir' pertenecen al grupo de verbos en '-ir [ir]'.", "Verbo en '-a\u00eetre / o\u00eetre'" , "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?"];
 ayuda[18] = [ "Verbo en '-a\u00eetre / o\u00eetre'" , 	 "Tres verbos tienen una desinencia para 'vous' distinta a '-ez'. \n Dato curioso: siempre precedida de la misma consonante.", "Verbo en '-illir'", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?",  "Cuatro verbos en 'illir' pertenecen al grupo de verbos en '-ir [ir]'."];
-ayuda[19] = ["Los verbos en '-uyer' se conjugan como los verbos en '-oyer'", "El verbo 'fuire' sigue la regla de la yod", "Los verbos en '-rire' no usan mp", "Los verbos en '-raire' siguen la regla de la yod", "Los verbos en '-eyer' NO siguen la regla de la yod"];
+ayuda[19] = ["Uno de los siete verbos (parecidos al español) que no pertenecen al grupo de verbos en -ir [ir] y que tienen mp en el infinitivo", "Los verbos en -illir utilizan des(a) y no utilizan mp", "Uno de los cuatro verbos en -illir que se conjugan como los verbos en -ir [ir]", "Verbo con conjugacion unica y mp en el infinitivo", "Al eliminar la terminacion se obtiene una forma terminada en consonante (=mp)", "Verbo emparentado a los siete similares al español con mp en el infinitivo", "Los verbos en -ourir no pertenecen al grupo de verbos en -ir [ir]. Al eliminar la terminacion se obtiene una forma terminada en consonante (r) pero la r no es nunca mp", "Al eliminar la terminacion se obtiene una forma terminada en consonante (=mp)"];
+ayuda[20] = ["Los verbos en '-uyer' se conjugan como los verbos en '-oyer'", "El verbo 'fuire' sigue la regla de la yod", "Los verbos en '-rire' no usan mp", "Los verbos en '-raire' siguen la regla de la yod", "Los verbos en '-eyer' NO siguen la regla de la yod"];
 
  var yacorreg = false;
  var cantit; 										// cantidad de items del ejercicio
