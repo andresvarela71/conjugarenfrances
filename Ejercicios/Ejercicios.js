@@ -23,6 +23,7 @@
  nomejer[16] = ["Marca de plural IV"];
  nomejer[17] = ["Marca de plural V"];
  nomejer[18] = ["Marca de plural VI"];
+ nomejer[19] = ["La yod I"];
   
 var video = [];							// videos que es necesario haber visto para realizar el ejercicio
 video[1] = ["1", "14"];					// el 2do elemento corresponde a las paginas del libro que es necesario haber leido
@@ -43,7 +44,7 @@ video[15] = ["5", "22"];
 video[16] = ["5", "22"];
 video[17] = ["5", "22"];
 video[18] = ["5", "22"];
-
+video[19] = ["6", "25"];
 
  var cantejer = nomejer.length - 1;				// cantidad de ejercicios disponibles
 
@@ -65,9 +66,9 @@ video[18] = ["5", "22"];
  solucion[14] = ["\u00e9cris", "\u00e9crivons", "disons", "dites", "souris", "sourient", "proscrit", "proscrivons", "cuis", "cuisez"];
  solucion[15] = ["re","ir", "re","re", "ir", "tre", "r", "r"];
  solucion[16] = ["v","\u00d8", "\u00d8","s", "\u00d8", "ss", "ss", "ss"];
- solucion[17] = ["transcris", "transcrivons","suffis", "suffisent", "enorgueillis", "enorgueillissez", "nais",  "naissent", "m\u00e9dit",  "médisez"];
- solucion[18] = [["pa\u00eet", "pait"], "disent", "assaille","prescrit", "vieillis", "paissent", "dites", "assaillent", "prescrivez", "vieillissons"]; //solalt[18] = ["pait","disent", "assaille","prescrit", "vieillis", "paissent", "dites", "assaillent", "prescrivez", "vieillissons"]
- 
+ solucion[17] = ["transcris", "transcrivons","suffis", "suffisent", "enorgueillis", "enorgueillissez", "nais",  "naissent", "m\u00e9dit",  "m\u00e9disez"];
+ solucion[18] = [["pa\u00eet", "pait"], "paissent", "disent", "dites", "assaille",  "assaillent", "prescrit", "prescrivez", "vieillis",   "vieillissons"]; //solalt[18] = ["pait","disent", "assaille","prescrit", "vieillis", "paissent", "dites", "assaillent", "prescrivez", "vieillissons"]
+ solucion[19] = ["essuies", "essuyez", "fuit", "fuyons", "sourit",  "sourions", "trait", "trayez", "grasseye", "grasseyons"];
 
  
 var textofijo = [];					// Parte de ejercicios aleatorios que acompaña al cuadro de respuesta
@@ -98,7 +99,7 @@ ayuda[15] = ["RG", "RG", "RG", "RG", "RG", "La terminaci\u00f3n de los verbos en
 ayuda[16] = ["\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", "Verbo en '-illir'", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'? \n Es un verbo que sab\u00e9s conjugar desde el video 1", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", "Verbo en '-ouvrir'.", "Verbo en '-a\u00eetre / o\u00eetre'" , "Cuatro verbos en 'illir' pertenecen al grupo de verbos en '-ir [ir]'.", "Verbo en '-ir [ir].'"]; 
 ayuda[17] = ["\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?", 	"Cuatro verbos en 'illir' pertenecen al grupo de verbos en '-ir [ir]'.", "Verbo en '-a\u00eetre / o\u00eetre'" , "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?"];
 ayuda[18] = [ "Verbo en '-a\u00eetre / o\u00eetre'" , 	 "Tres verbos tienen una desinencia para 'vous' distinta a '-ez'. \n Dato curioso: siempre precedida de la misma consonante.", "Verbo en '-illir'", "\u00bfEs un verbo en '-crire', en 'rire' o en '-ire'?",  "Cuatro verbos en 'illir' pertenecen al grupo de verbos en '-ir [ir]'."];
-			
+ayuda[19] = ["Los verbos en '-uyer' se conjugan como los verbos en '-oyer'", "El verbo 'fuire' sigue la regla de la yod", "Los verbos en '-rire' no usan mp", "Los verbos en '-raire' siguen la regla de la yod", "Los verbos en '-eyer' NO siguen la regla de la yod"];
 
  var yacorreg = false;
  var cantit; 										// cantidad de items del ejercicio
@@ -275,8 +276,8 @@ function borrar(ej, aleat) {
 
 
 
-	window.scrollTo(0, document.body.scrollHeight);   			// Hace scroll para que el ejercicio se muestre completo
-}
+	// window.scrollTo(0, document.body.scrollHeight);   			// Hace scroll para que el ejercicio se muestre completo
+} 
 
 	
 function impayuda() {
