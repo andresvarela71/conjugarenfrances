@@ -66,9 +66,9 @@ video[23] = ["7", "25"];
  solucion[6] = ["pleure","pleures", "pleurons","inclus", "inclut", "incluent", "rouvres", "rouvre", "rouvrez", "assaille", "assailles", "assaillent", "cours", "court", "courons" ]; //solalt[6] = ["pleure","inclus", "rouvres","assaille", "cours", "pleures", "inclut", "rouvre", "assailles", "court", "pleurons", "incluent", "rouvrez", "assaillent", "courons" ];
  solucion[7] = ["prends","regardons", "souffre","travaillent", "ouvres", "rit", "allez", "cours", "semblent", "inclut"]; //solalt[7] = ["prends","regardons", "souffre","travaillent", "ouvres", "rit", "allez", "cours", "semblent", "inclut"];
  solucion[8] = ["entre","quitte", "vend","d\u00e9missionne", "d\u00e9filent", "publie", "est", "introduit", ["na\u00eet", "nait"], "compte", "signe"]; //solalt[8] = ["entre","quitte", "vend","d\u00e9missionne", "d\u00e9filent", "publie", "est", "introduit", "nait", "compte", "signe"];
- solucion[9] = ["nage","nageons", "fonds","fond", "fais", "font", "est", "sommes", "je", "dites"];
+ solucion[9] = ["nage","nageons", "fonds","fond", "fais", "font", "est", "sommes", "dis", "dites"];
  solucion[10] = ["fais","faites", "convaincs","convainc","s\u00e8mes","semez", "place", "pla\u00e7ons", "vais", "vont"];
- solucion[11] = ["p\u00e8le","pelez", "as", "ont", "appelles", "appelons", "d\u00e9place", "d\u00e9placez", "pr\u00e9c\u00e8de", "pr\u00e9c\u00e9dez"];
+ solucion[11] = ["p\u00e8le","pelez", "as", "ont", "appelles", "appelons", "d\u00e9place", "d\u00e9pla\u00e7ons", "pr\u00e9c\u00e8de", "pr\u00e9c\u00e9dez"];
  solucion[12] = ["-re","-ire", "s","introduis", "introduisez"];
  solucion[13] = ["-re","-crire", "v","circonscris", "circonscrivons"];
  solucion[14] = ["\u00e9cris", "\u00e9crivons", "disons", "dites", "souris", "sourient", "proscrit", "proscrivons", "cuis", "cuisez"];
@@ -76,7 +76,7 @@ video[23] = ["7", "25"];
  solucion[16] = ["v","\u00d8", "\u00d8","s", "\u00d8", "ss", "ss", "ss"];
  solucion[17] = ["transcris", "transcrivons","suffis", "suffisent", "enorgueillis", "enorgueillissez", "nais",  "naissent", "m\u00e9dit",  "m\u00e9disez"];
  solucion[18] = [["pa\u00eet", "pait"], "paissent", "disent", "dites", "assaille",  "assaillent", "prescrit", "prescrivez", "vieillis",   "vieillissons"]; //solalt[18] = ["pait","disent", "assaille","prescrit", "vieillis", "paissent", "dites", "assaillent", "prescrivez", "vieillissons"]
- solucion[19] = ["t", "\u00d8", "ss", "ill", "t", "t", "\u00d8", "v"]
+ solucion[19] = ["t", "\u00d8", "ss", "ill", "t", "ss", "\u00d8", "v"]
  solucion[20] = ["m", "\u00f8", "\u00f8", "t",  "\u00f8", "\u00f8", "v",  "\u00f8" ];
  solucion[21] = ["m", "t", "p", "t",  "d", "\u00f8", "v",  "k" ];
  solucion[22] = ["essuies", "essuyez", "fuit", "fuyons", "sourit",  "sourions", "trait", "trayez", "grasseye", "grasseyons"];
