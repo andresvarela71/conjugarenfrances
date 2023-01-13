@@ -1102,3 +1102,42 @@ function imprimiralerta(mensaje) {
 		
 		
 	}
+
+	function abrirconj() {
+		const pag = document.getElementById("masterframe");
+		pag.setAttribute("src", "Conjugador.html");
+		const tit = document.getElementById("indsec");
+		tit.innerHTML = "Conjugador de verbos en presente del indicativo"
+	}
+
+	function abrirvideo() {
+		const pag = document.getElementById("masterframe");
+		pag.setAttribute("src", "Videos.html");
+		const tit = document.getElementById("indsec");
+		tit.innerHTML = "Curso completo de conjugaci&#243;n en video"
+	}
+
+	function abririnfo() {
+		const pag = document.getElementById("masterframe");
+		pag.setAttribute("src", "Informacion.html");
+		const tit = document.getElementById("indsec");
+		tit.innerHTML = "Un método novedoso... con más de 15 años"
+	}
+
+	function abrirejA() {
+		const pag = document.getElementById("masterframe");
+		pag.setAttribute("src", "Ejercicios/Ejercicio1.html");
+		const tit = document.getElementById("indsec");
+		tit.innerHTML = "Ejercicios 1 a 24";
+		const bot = document.getElementById("ejercicios");
+		bot.options.item(0).selected = "selected";
+	}
+
+	function abrirejB() {
+		const pag = document.getElementById("masterframe");
+		pag.setAttribute("src", "EjerciciosB/Ejercicio30.html");
+		const tit = document.getElementById("indsec");
+		tit.innerHTML = "Ejercicios 25 a 48";
+		const bot = document.getElementById("ejercicios");
+		bot.options.item(0).selected = "selected";
+	}

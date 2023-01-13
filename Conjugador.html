@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, frances, conjugar en frances, conjugacion frances, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, aprender, FLE, clases, conjugar en frances, conjugacion frances, verbos irregulares">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="ConjugadorJS.js"></script>
+	
+</head>
+<body onload="borrarInput()">
+	<div id="contenedor">
+	
+	
+	
+		
+	  
+	<section id="seccion">
+		<div id=contable>
+			<div id="consigna">
+				<label id="label">Escriba un verbo y presione <i>Enter</i> para conjugar:</label>
+			</div>
+			<div id="verbaconj">
+				<input type="text" id="verbo" placeholder="Escriba aqu&#237;" onchange="controlar()" autocomplete="off" autofocus required />
+			</div>
+			
+		
+				
+			
+				
+			<div id="tableroizq">
+					<h2 class="titconj cuadro" id="headtabprin">Conjugaci&#243;n</h2>		<!-- Titulo 1 -->
+					<section class="tabconj cuadro" id="personas">					<!-- Pronombres 1 -->
+					</section>
+					
+					<section class="tabconj conj cuadro" id="conjugacion">			<!-- Conjugacion 1 -->
+					</section>
+			</div>
+				
+				
+			<div id="tableroder">
+					<h2 class="titconj cuadro" id="headtabsec"></h2>					<!-- Titulo 2 -->
+					<section class="tabconj cuadro" id="segundapers">				<!-- Pronombres 2 -->
+					</section>
+					
+					<section class="tabconj conj cuadro" id="segundaconj">			<!-- Conjugacion 2 -->
+					</section>
+
+					<section class="tabconj conj cuadro" id="aclara">
+						
+					</section>
+			</div>
+			<p id = "parraf"></p>										<!-- Codigo de colores -->
+			
+
+			<article class="articulos" id="datos">
+			
+			</article>
+			
+		</div>
+	</section>
+	
+	<!--<aside id="columna">
+		
+	</aside>-->
+		
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	
+</div>
+	
+	
+	
+</body>
+</html>

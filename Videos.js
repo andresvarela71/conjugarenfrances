@@ -14,7 +14,7 @@
  function cargarvideo(nrovideo) {
 	document.getElementById("titvideo").innerHTML = nrovideo + ". " + titvideo[nrovideo - 1];
 	
-	var videoamostrar = document.getElementById("frame");
+	var videoamostrar = document.getElementById("framevideo");
 	videoamostrar.src = dirvideo[nrovideo - 1];
 	
 }

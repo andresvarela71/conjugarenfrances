@@ -42,8 +42,28 @@ hr {									 /* linea horizontal */
 	grid-column: 1 / 7;
 	grid-row: 3;
 	margin-top: 10px;
-
 	
+}
+
+#contmaxconj {
+	max-width: 1600px;
+}
+
+#contiframe{
+	width: 100%;
+	
+	height: 0;
+	padding-bottom: 177%;
+	position: relative;
+}
+
+#masterframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 0;
 }
 
 #pie {
@@ -318,7 +338,7 @@ body {background-color: #d0e5e6;}
 	position: relative;
 }
 
-iframe {
+#framevideo {
 	width: 100%;
 	height: 100%;
 	position: absolute;

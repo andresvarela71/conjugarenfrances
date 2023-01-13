@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="ConjugadorJS.js"></script>
 	
 </head>
-<body onload="borrarInput()">
+<body>
 	<div id="contenedor">
 	<header id="encabezado">
 		<h1 id="titpag">Conjugar en franc&#233;s</h1>
@@ -20,72 +20,33 @@
 	
 	<nav id="navegacion">
 		<ul id="contbot">
-			<li id="boton1"><button class="boton" id="conjugador" onclick="window.location.href='index.html'">Conjugador</button></li>
-			<li id="boton2"><button class="boton" id ="videos" onclick="window.location.href='Videos.html'">Videos</button></li>
+			<li id="boton1"><button class="boton" id="conjugador" onclick="abrirconj()">Conjugador</button></li>
+			<li id="boton2"><button class="boton" id ="videos" onclick="abrirvideo()">Videos</button></li>
 			<li id="boton3">
 				<select class="boton" id ="ejercicios" > 
 					<option disabled selected hidden >Ejercicios</option>
-					<option onclick="window.location.href='Ejercicios/Ejercicio1.html'">Ejercicios 1 a 24</option>
-					<option onclick="window.location.href='EjerciciosB/Ejercicio30.html'">Ejercicios 25 a 48</option>
+					<option onclick="abrirejA()")>Ejercicios 1 a 24</option>
+					<option onclick="abrirejB()">Ejercicios 25 a 48</option>
 				</select>
 			</li>
-			<li id="boton4"><button class="boton" id ="info" onclick="window.location.href='Informacion.html'">Libro</button></li>
+			<li id="boton4"><button class="boton" id ="info" onclick="abririnfo()">Libro</button></li>
 		</ul>
 	</nav>
 		
 	  
 	<section id="seccion">
-		<div id=contable>
-			<div id="consigna">
-				<label id="label">Escriba un verbo y presione <i>Enter</i> para conjugar:</label>
-			</div>
-			<div id="verbaconj">
-				<input type="text" id="verbo" placeholder="Escriba aqu&#237;" onchange="controlar()" autocomplete="off" autofocus required />
-			</div>
-			
-		
-				
-			
-				
-			<div id="tableroizq">
-					<h2 class="titconj cuadro" id="headtabprin">Conjugaci&#243;n</h2>		<!-- Titulo 1 -->
-					<section class="tabconj cuadro" id="personas">					<!-- Pronombres 1 -->
-					</section>
-					
-					<section class="tabconj conj cuadro" id="conjugacion">			<!-- Conjugacion 1 -->
-					</section>
-			</div>
-				
-				
-			<div id="tableroder">
-					<h2 class="titconj cuadro" id="headtabsec"></h2>					<!-- Titulo 2 -->
-					<section class="tabconj cuadro" id="segundapers">				<!-- Pronombres 2 -->
-					</section>
-					
-					<section class="tabconj conj cuadro" id="segundaconj">			<!-- Conjugacion 2 -->
-					</section>
-
-					<section class="tabconj conj cuadro" id="aclara">
-						
-					</section>
-			</div>
-			<p id = "parraf"></p>										<!-- Codigo de colores -->
-			
-
-			<article class="articulos" id="datos">
-			
-			</article>
-			
-		</div>
+        <div id="contmaxconj">
+            <div id="contiframe">
+		        <iframe id="masterframe" src="Conjugador.html"></iframe>
+            </div>
+        </div>
 	</section>
 	
 	<!--<aside id="columna">
 		
 	</aside>-->
 		
-	<footer id="pie">
-		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
-	</footer>	
+	
 	
 </div>
 	
