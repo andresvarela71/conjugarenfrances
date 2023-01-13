@@ -28,6 +28,7 @@
  nomejer[21] = ["Marca de plural IX"];
  nomejer[22] = ["La yod I"];
  nomejer[23] = ["La yod II"];
+ nomejer[24] = ["La yod III"];
   
 var video = [];							// videos que es necesario haber visto para realizar el ejercicio
 video[1] = ["1", "14"];					// el 2do elemento corresponde a las paginas del libro que es necesario haber leido
@@ -53,6 +54,8 @@ video[20] = ["6", "23"];
 video[21] = ["6", "23"];
 video[22] = ["7", "25"];
 video[23] = ["7", "25"];
+video[24] = ["7", "25"];
+
 
  var cantejer = nomejer.length - 1;				// cantidad de ejercicios disponibles
 
@@ -81,7 +84,8 @@ video[23] = ["7", "25"];
  solucion[21] = ["m", "t", "p", "t",  "d", "\u00f8", "v",  "k" ];
  solucion[22] = ["essuies", "essuyez", "fuit", "fuyons", "sourit",  "sourions", "trait", "trayez", "grasseye", "grasseyons"];
  solucion[23] = ["paie", "paye", "paies", "payes", "paie", "paye", "payons", "payons", "payez", "payez", "paient", "payent"];
- 
+ solucion[24] = ["assois", "assois", "assoit", "assoyons", "assoyez", "assoient"];
+
 
 var textofijo = [];					// Parte de ejercicios aleatorios que acompaña al cuadro de respuesta
 textofijo[2] = ["travaillent", "court", "inclus", "\u00e9tudions", "arrive", "m\u00e8nes", "regardez" ];
