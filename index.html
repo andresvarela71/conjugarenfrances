@@ -22,7 +22,13 @@
 		<ul id="contbot">
 			<li id="boton1"><button class="boton" id="conjugador" onclick="window.location.href='index.html'">Conjugador</button></li>
 			<li id="boton2"><button class="boton" id ="videos" onclick="window.location.href='Videos.html'">Videos</button></li>
-			<li id="boton3"><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicios/Ejercicio1.html'">Ejercicios</button></li>
+			<li id="boton3">
+				<select class="boton" id ="ejercicios" > 
+					<option disabled selected hidden >Ejercicios</option>
+					<option onclick="window.location.href='Ejercicios/Ejercicio1.html'">Ejercicios 1 a 24</option>
+					<option>Ejercicios 25 a 48</option>
+				</select>
+			</li>
 			<li id="boton4"><button class="boton" id ="info" onclick="window.location.href='Informacion.html'">Libro</button></li>
 		</ul>
 	</nav>

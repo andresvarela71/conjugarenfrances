@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
 	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
-	<script type="text/javascript" src="Ejercicios.js"></script>
+	<script type="text/javascript" src="../Ejercicios.js"></script>
 </head>
 <body onload="borrar(24)">
 	<div id="contenedor">
@@ -21,7 +21,13 @@
 			<ul id="contbot">
 				<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
 				<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
-				<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+				<li id="boton3">
+                    <select class="boton" id ="ejercicios" > 
+                        <option disabled selected hidden >Ejercicios</option>
+                        <option onclick="window.location.href='Ejercicio1.html'">Ejercicios 1 a 24</option>
+                        <option>Ejercicios 25 a 48</option>
+                    </select>
+                </li>
 				<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
 			</ul>
 		</nav>
@@ -47,22 +53,22 @@
                         <div class="centro margeninf" >Conjugacion alternativa<br>(más utilizada)</div>
 						<div id="verbo0" class="jder aend">Je m'</div>
 						<div class="centro"><input class="input "  onclick="blanco(0)" autofocus ></div>
-                    	<div class="centro">assieds</div>	
+                    	<div class="centro">Je m'assieds</div>	
 						<div id="verbo1" class="jder aend">Tu t'</div>
 						<div class="centro"><input class="input "  onclick="blanco(1)" ></div>
-                        <div class="centro">assieds</div>	
+                        <div class="centro">Tu t'assieds</div>	
 						<div id="verbo2" class="jder aend">Il / Elle / On s'</div>
 						<div class="centro"><input class="input "  onclick="blanco(2)" ></div>
-                   		<div class="centro">assied</div>	
+                   		<div class="centro">Il s'assied</div>	
 						<div id="verbo3" class="jder aend">Nous nous</div>
 						<div class="centro"><input class="input "  onclick="blanco(3)" ></div>
-                    	<div class="centro">asseyons</div>	
+                    	<div class="centro">Nous nous asseyons</div>	
 						<div id="verbo4" class="jder aend">Vous vous</div>
 						<div class="centro"><input class="input "  onclick="blanco(4)" ></div>
-                    	<div class="centro">asseyez</div>	
+                    	<div class="centro">Vous vous asseyez</div>	
 						<div id="verbo5" class="jder aend">Ils / Elles s'</div>
 						<div class="centro"><input class="input "  onclick="blanco(5)" ></div>
-                    	<div class="centro">asseyent</div>	
+                    	<div class="centro">Ils s'asseyent</div>	
 					</div>
 
                     
