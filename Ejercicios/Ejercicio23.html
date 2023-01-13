@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="Ejercicios.js"></script>
+</head>
+<body onload="borrar(23)">
+	<div id="contenedor">
+		<header id="encabezado">
+			<h1 id="titpag">Conjugar en franc&#233;s</h1>
+			<h2 id="indsec">Ejercicios</h2>
+			<hr>
+		</header>
+
+		<nav id="navegacion">
+			<ul id="contbot">
+				<li><button class="boton" id="conjugador" onclick="window.location.href='../index.html'">Conjugador</button></li>
+				<li><button class="boton" id ="videos" onclick="window.location.href='../Videos.html'" >Videos</button></li>
+				<li><button class="boton" id ="ejercicios" onclick="window.location.href='Ejercicio1.html'">Ejercicios</button></li>
+				<li><button class="boton" id ="info" onclick="window.location.href='../Informacion.html'">Libro</button></li>
+			</ul>
+		</nav>
+	
+		<aside id="columna">
+			<ol id="listas">
+				
+			</ol>
+		</aside>
+	
+		<section id="secejercicio">
+			<h3  id="kejerc"></h3>
+			<p><span class="negrita">Conjug&#225; el verbo <span class="ital letra12 azul">payer</span> de las dos maneras posibles:</span><br>
+				<span id="previo" class="ital rojo"></span></p>
+
+			<form>
+			
+				<div  id="tablaej1">
+
+                    <div class="c1de1 dobleconj">
+						<div></div>
+						<div class="centro margeninf" >Utilizando la regla de <br> la <span class="negrita">yod</span> </div>
+                        <div class="centro margeninf" >Considerando la <span class="negrita">y </span><br>como parte del radical</div>
+						<div id="verbo0" class="jder aend">Je</div>
+						<div class="centro"><input class="input "  onclick="blanco(4)" autofocus ></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(5)" ></div>	
+						<div id="verbo1" class="jder aend">Tu</div>
+						<div class="centro"><input class="input "  onclick="blanco(0)" autofocus ></div>
+                        <div class="centro"><input class="input "  onclick="blanco(1)" ></div>	
+						<div id="verbo2" class="jder aend">Il / Elle / On</div>
+						<div class="centro"><input class="input "  onclick="blanco(2)" autofocus ></div>
+                   		<div class="centro"><input class="input "  onclick="blanco(3)" ></div>	
+						<div id="verbo3" class="jder aend">Nous</div>
+						<div class="centro"><input class="input "  onclick="blanco(6)" autofocus ></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(7)" ></div>	
+						<div id="verbo4" class="jder aend">Vous</div>
+						<div class="centro"><input class="input "  onclick="blanco(8)" autofocus ></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(9)" ></div>	
+						<div id="verbo5" class="jder aend">Ils / Elles</div>
+						<div class="centro"><input class="input "  onclick="blanco(10)" autofocus ></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(11)" ></div>	
+					</div>
+
+                    
+                        
+						
+					
+				
+					<div class="c1de1 centro margensup">
+						<input class="botones" type="button" value="Corregir" onclick="corregir(23)">
+						<input class="botones" type="reset" value="Borrar" onclick="borrar(23)">
+						<input class="botones" type="button" value="Mostrar" onclick="mostrar(23)">
+						<select class="botones" id="ayuda" onchange="impayuda()">
+						
+						</select>
+					</div>
+				
+					<div  id="contador">
+						<div class="lyb">
+							<input class="label" type="button" value="CORRECTOS" disabled>
+							<input class="botres" id="botverde" type="button" value="0" disabled>
+						</div>
+						
+						<div  class="lyb">
+							<input class="label" type="button" value="ERRORES" disabled>
+							<input class="botres" id="botrojo" type="button" value="0" disabled>
+						</div>
+					</div>
+				</div>
+		</form>
+	</section>
+	
+	<section>
+		
+	
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	<script>crearlista();</script>
+</body>
+</html>

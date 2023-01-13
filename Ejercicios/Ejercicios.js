@@ -27,6 +27,7 @@
  nomejer[20] = ["Marca de plural VIII"];
  nomejer[21] = ["Marca de plural IX"];
  nomejer[22] = ["La yod I"];
+ nomejer[23] = ["La yod II"];
   
 var video = [];							// videos que es necesario haber visto para realizar el ejercicio
 video[1] = ["1", "14"];					// el 2do elemento corresponde a las paginas del libro que es necesario haber leido
@@ -49,7 +50,9 @@ video[17] = ["5", "22"];
 video[18] = ["5", "22"];
 video[19] = ["6", "23"];
 video[20] = ["6", "23"];
+video[21] = ["6", "23"];
 video[22] = ["7", "25"];
+video[23] = ["7", "25"];
 
  var cantejer = nomejer.length - 1;				// cantidad de ejercicios disponibles
 
@@ -77,8 +80,9 @@ video[22] = ["7", "25"];
  solucion[20] = ["m", "\u00f8", "\u00f8", "t",  "\u00f8", "\u00f8", "v",  "\u00f8" ];
  solucion[21] = ["m", "t", "p", "t",  "d", "\u00f8", "v",  "k" ];
  solucion[22] = ["essuies", "essuyez", "fuit", "fuyons", "sourit",  "sourions", "trait", "trayez", "grasseye", "grasseyons"];
-
+ solucion[23] = ["paie", "paye", "paies", "payes", "paie", "paye", "payons", "payons", "payez", "payez", "paient", "payent"];
  
+
 var textofijo = [];					// Parte de ejercicios aleatorios que acompaña al cuadro de respuesta
 textofijo[2] = ["travaillent", "court", "inclus", "\u00e9tudions", "arrive", "m\u00e8nes", "regardez" ];
 textofijo[3] = ["interrompre", "supposer", "na\u00eetre", "appauvrir", "d\u00e9couvrir", "cueillir", "mijoter", "mettre" ];
@@ -113,6 +117,8 @@ ayuda[19] = ["Uno de los siete verbos (parecidos al espa\u00f1ol) que no pertene
 ayuda[20] = ["Uno de los siete verbos (parecidos al espa\u00f1ol) que no pertenecen al grupo de verbos en -ir [ir] y que tienen mp en el infinitivo", "El verbo 'v\u00eatir' no pertenece al grupo de verbos en -ir [ir]. La 't' se matiene en toda la conjugaci\u00f3n en el escrito", "Los verbos en -dre, -pre y -cre mantienen, en el escrito, la consonante final del radical en toda la conjugaci\u00f3n", "Al eliminar la terminaci\u00f3n se obtiene una forma terminada en consonante (=mp)", "Los verbos en -dre, -pre y -cre mantienen, en el escrito, la consonante final del radical en toda la conjugaci\u00f3n", "La 'r' no es nunca mp", "Uno de los siete verbos (parecidos al espa\u00f1ol) que no pertenecen al grupo de verbos en -ir [ir] y que tienen mp en el infinitivo", "Los verbos en -dre, -pre y -cre mantienen, en el escrito, la consonante final del radical en toda la conjugaci\u00f3n"];
 ayuda[21] = ["Uno de los siete verbos (parecidos al espa\u00f1ol) que no pertenecen al grupo de verbos en -ir [ir] y que tienen mp en el infinitivo", "La t del verbo 'v\u00eatir' se pronuncia \u00fanicamente cuando est\u00e1 seguida de vocal, es decir, las tres personas del plural", "La consonante final del radical de los verbos en -dre, -pre y -cre se mantiene en toda la conjugaci\u00f3n pero s\u00f3lo se pronuncia en las personas del plural", "El sonido 't' s\u00f3lo aparece en las personas del plural", "La consonante final del radical de los verbos en -dre, -pre y -cre se mantiene en toda la conjugaci\u00f3n pero s\u00f3lo se pronuncia en las personas del plural", "La 'r' no es nunca mp", "Uno de los siete verbos (parecidos al espa\u00f1ol) que no pertenecen al grupo de verbos en -ir [ir] y que tienen mp en el infinitivo", "La consonante final del radical de los verbos en -dre, -pre y -cre se mantiene en toda la conjugaci\u00f3n pero s\u00f3lo se pronuncia en las personas del plural"];
 ayuda[22] = ["Los verbos en '-uyer' se conjugan como los verbos en '-oyer'", "El verbo 'fuire' sigue la regla de la yod", "Los verbos en '-rire' no usan mp", "Los verbos en '-raire' siguen la regla de la yod", "Los verbos en '-eyer' NO siguen la regla de la yod"];
+ayuda[23] = ["La desinencia es muda por lo que no aparece la yod", "La desinencia es muda por lo que no aparece la yod", "La desinencia es muda por lo que no aparece la yod", "La desinencia se pronuncia, por lo que aparece la yod", "La desinencia se pronuncia, por lo que aparece la yod", "La desinencia es muda por lo que no aparece la yod"];
+
 
  var yacorreg = false;
  var cantit; 										// cantidad de items del ejercicio

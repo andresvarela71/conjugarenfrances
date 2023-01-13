@@ -269,6 +269,8 @@ body {background-color: #d0e5e6;}
 .centro {text-align: center;}
 .der {text-align: right;}
 .margenes {margin-left: 10px; margin-right: 10px; }
+.margeninf {margin-bottom: 1em;}
+.margensup {margin-top: 1em;}
 .ancho60 {width: 60px;}
 .ancho100 {width: 100px;}
 .ancho120 {width: 120px;}
@@ -371,6 +373,11 @@ iframe {
 	align-items: center;
 }
 
+.dobleconj {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 3em;
+}
 
 .c1de1 {
 	grid-column: 1 / 13;
@@ -560,9 +567,8 @@ iframe {
 
 #botverde {background-color: green;}
 #botrojo {background-color: red;}
-/*#contador {display: block;}*/
 #ejercicio {text-align: center;}
-/*#botabla {margin-left: auto; margin-right: auto;}*/
+
 
 
 
