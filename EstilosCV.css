@@ -485,6 +485,10 @@ iframe {
 	font-size: 1em;
 }
 
+.inputmini {
+	width: 2em;
+}
+
 .xl {
 	width: 8em;
 }
@@ -685,7 +689,6 @@ iframe {
 }
 
 .input {
-	width: 6em;
 	font-size: 1.2em;
 }
 
