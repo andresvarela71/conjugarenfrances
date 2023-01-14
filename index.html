@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="ConjugadorJS.js"></script>
 	
 </head>
-<body>
+<body id="body">
 	<div id="contenedor">
 	<header id="encabezado">
 		<h1 id="titpag">Conjugar en franc&#233;s</h1>
@@ -23,14 +23,15 @@
 			<li id="boton1"><button class="boton" id="conjugador" onclick="abrirconj()">Conjugador</button></li>
 			<li id="boton2"><button class="boton" id ="videos" onclick="abrirvideo()">Videos</button></li>
 			<li id="boton3">
-				<select class="boton" id ="ejercicios" > 
+				<select class="boton" id ="ejercicios" onchange = "abrirej()"> 
 					<option disabled selected hidden >Ejercicios</option>
-					<option onclick="abrirejA()")>Ejercicios 1 a 24</option>
-					<option onclick="abrirejB()">Ejercicios 25 a 48</option>
+					<option >Ejercicios 1 a 24</option>
+					<option >Ejercicios 25 a 48</option>
 				</select>
 			</li>
 			<li id="boton4"><button class="boton" id ="info" onclick="abririnfo()">Libro</button></li>
 		</ul>
+		<hr>
 	</nav>
 		
 	  

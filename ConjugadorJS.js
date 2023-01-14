@@ -1121,9 +1121,18 @@ function imprimiralerta(mensaje) {
 		const pag = document.getElementById("masterframe");
 		pag.setAttribute("src", "Informacion.html");
 		const tit = document.getElementById("indsec");
-		tit.innerHTML = "Un método novedoso... con más de 15 años"
+		tit.innerHTML = "Un m\u00e9todo novedoso... con m\u00e1s de 15 a\u00f1os"
 	}
 
+	function abrirej() {
+		const bot = document.getElementById("ejercicios");
+		if (bot.selectedIndex == 1) {
+			abrirejA();
+		} else if (bot.selectedIndex == 2) {
+			abrirejB();
+		}
+	}
+	
 	function abrirejA() {
 		const pag = document.getElementById("masterframe");
 		pag.setAttribute("src", "Ejercicios/Ejercicio1.html");
