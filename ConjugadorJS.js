@@ -1144,7 +1144,7 @@ function imprimiralerta(mensaje) {
 
 	function abrirejB() {
 		const pag = document.getElementById("masterframe");
-		pag.setAttribute("src", "EjerciciosB/Ejercicio30.html");
+		pag.setAttribute("src", "EjerciciosB/Ejercicio25.html");
 		const tit = document.getElementById("indsec");
 		tit.innerHTML = "Ejercicios 25 a 48";
 		const bot = document.getElementById("ejercicios");

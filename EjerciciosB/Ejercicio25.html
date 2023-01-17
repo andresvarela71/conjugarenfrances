@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="author" content="Andres Varela Albieni">
+	<meta name="description" content="Conjugador de verbos en linea que sigue las reglas del libro 'Conjugar en frances' de Andres Varela Albieni">
+	<meta name="keywords" content="conjugar, conjugacion, conjugador, verbo, infinitivo, presente, indicativo, radical, terminacion, desinencia, singular, plural, marca plural, persona, pronombre, irregular, excepcion, ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conjugador de verbos</title> <!--  Nombre de la pagina-->
+	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
+	<script type="text/javascript" src="../EjerciciosB.js"></script>
+</head>
+<body onload="borrar(25)">
+	<div id="contenedor">
+		
+	
+		<aside id="columna">
+			<ol id="listas">
+				
+			</ol>
+		</aside>
+	
+		<section id="secejercicio">
+			<h3  id="kejerc"></h3>
+			<p><span class="negrita">Conjug&#225; los verbos <span class="ital letra12 azul">requ&#233;rir</span> y <span class="ital letra12 azul">tenir</span> (como <span class="ital letra12">querer</span> en espa&#241;ol)</span><br>
+				<span id="previo" class="ital rojo"></span></p>
+
+			<form>
+			
+				<div  id="tablaej1">
+
+                    <div class="c1de1 dobleconj">
+						<div></div>
+						<div class="centro margeninf" ><span class="negrita">requ&#233;rir</span> </div>
+                        <div class="centro margeninf" ><span class="negrita">tenir </span></div>
+						<div id="verbo0" class="jder aend">Je</div>
+						<div class="centro"><input class="input "  onclick="blanco(0)" onblur="input(0)" autofocus ></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(1)"  onblur="input(1)"></div>	
+						<div id="verbo1" class="jder aend">Tu</div>
+						<div class="centro"><input class="input "  onclick="blanco(2)"  onblur="input(2)"></div>
+                        <div class="centro"><input class="input "  onclick="blanco(3)"  onblur="input(3)"></div>	
+						<div id="verbo2" class="jder aend">Il / Elle / On</div>
+						<div class="centro"><input class="input "  onclick="blanco(4)"  onblur="input(4)"></div>
+                   		<div class="centro"><input class="input "  onclick="blanco(5)" onblur="input(5)"></div>	
+						<div id="verbo3" class="jder aend">Nous</div>
+						<div class="centro"><input class="input "  onclick="blanco(6)" onblur="input(6)" ></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(7)"  onblur="input(7)"></div>	
+						<div id="verbo4" class="jder aend">Vous</div>
+						<div class="centro"><input class="input "  onclick="blanco(8)"  onblur="input(8)"></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(9)"  onblur="input(9)"></div>	
+						<div id="verbo5" class="jder aend">Ils / Elles</div>
+						<div class="centro"><input class="input "  onclick="blanco(10)"  onblur="input(10)"></div>
+                    	<div class="centro"><input class="input "  onclick="blanco(11)"  onblur="input(11)"></div>	
+					</div>
+
+                    
+                    <div class="c1de1">
+						<input class="botones" type="button" value="&#232;" onclick="agregarcar('egr')">
+                        <input class="botones" type="button" value="&#233;" onclick="agregarcar('eag')">
+					</div>   
+						
+					
+				
+					<div class="c1de1 centro margensup">
+						<input class="botones" type="button" value="Corregir" onclick="corregir(25)">
+						<input class="botones" type="reset" value="Borrar" onclick="borrar(25)">
+						<input class="botones" type="button" value="Mostrar" onclick="mostrar(25)">
+						<select class="botones" id="ayuda" onchange="impayuda()">
+						
+						</select>
+					</div>
+				
+					<div  id="contador">
+						<div class="lyb">
+							<input class="label" type="button" value="CORRECTOS" disabled>
+							<input class="botres" id="botverde" type="button" value="0" disabled>
+						</div>
+						
+						<div  class="lyb">
+							<input class="label" type="button" value="ERRORES" disabled>
+							<input class="botres" id="botrojo" type="button" value="0" disabled>
+						</div>
+					</div>
+				</div>
+		</form>
+	</section>
+	
+	<section>
+		
+	
+	</section>
+	<footer id="pie">
+		Desarrollado por Andr&#233;s Varela Albieni &copy; 2007-2022
+	</footer>	
+	<script>crearlista();</script>
+</body>
+</html>

@@ -5,7 +5,8 @@
  
 var nomejer = [];				// nombre del ejercicio
 nomejer[0] = [""];
-nomejer[30] = ["Proximamente..."];
+nomejer[25] = ["Verbos con 2 radicales I"];
+nomejer[26] = ["Verbos con 2 radicales II"];
 /* nomejer[2] = [""];
 nomejer[3] = [""];
 nomejer[4] = [""];
@@ -31,8 +32,8 @@ nomejer[23] = [""];
 nomejer[24] = [""]; */
  
 var video = [];							// videos que es necesario haber visto para realizar el ejercicio
-video[1] = ["1", "14"];					// el 2do elemento corresponde a las paginas del libro que es necesario haber leido
-video[2] = ["1", "14"];
+video[25] = ["8", "29"];					// el 2do elemento corresponde a las paginas del libro que es necesario haber leido
+video[26] = ["8", "29"];
 video[3] = ["1", "14"];
 video[4] = ["1", "14"];
 video[5] = ["2", "17"];
@@ -61,8 +62,8 @@ var cantejer = nomejer.length - 1;				// cantidad de ejercicios disponibles
 
  
 var solucion = [];				// solucion a los ejercicios
-solucion[1] = ["-er","travaill-", "des(pl)", "des(sing)"]; //solalt[1] = ["-er","travaill-", "des(pl)", "des(sing)"]; 
-solucion[2] = ["des(pl)","des(b)", "des(b)", "des(pl)", "des(a)", "des(a)", "des(pl)"]; //solalt[2] = ["des(pl)","des(b)", "des(b)", "des(pl)", "des(a)", "des(a)", "des(pl)"];
+solucion[25] = ["requiers","tiens", "requiers", "tiens", "requiert", "tient", "requ\u00e9rons", "tenons", "requ\u00e9rez", "tenez", "requi\u00e8rent", "tiennent"]; 
+solucion[26] = ["meus","meus", "meut", "mouvons", "mouvez", "meuvent"]; 
 solucion[3] = ["des(b)","des(a)", "des(b)","des(b)", "des(a)", "des(a)", "des(a)", "des(b)"]; //solalt[3] = ["des(b)","des(a)", "des(b)","des(b)", "des(a)", "des(a)", "des(a)", "des(b)"];
 solucion[4] = ["salue","salues", "salue","parcours", "parcours", "parcourt", "offre", "offres", "offre", "tressaille", "tressailles", "tressaille", "ris", "ris", "rit" ]; //solalt[4] = ["salue","parcours", "offre","tressaille", "ris", "salues", "parcours", "offres", "tressailles", "ris", "salue", "parcourt", "offre", "tressaille", "rit" ];
 solucion[5] = ["ils / elles","il / elle / on", "je / tu","nous", "je / il / elle / on", "tu", "vous"]; //solalt[5] = ["ils / elles","il / elle / on", "je / tu","nous", "je / il / elle / on", "tu", "vous"];
@@ -99,8 +100,8 @@ textofijo[21] = ["dormir \u005bd\u0254\u0280mi\u0280\u005d", "v\u00eatir \u005bv
 
 
 var ayuda = [];
-ayuda[1] = ["La terminaci\u00f3n son las dos \u00faltimas letras del infinitivo", "El radical se obtiene quitando la terminaci\u00f3n al infinitivo", "Lo que se agrega al radical para obtener la forma conjugada es la desinencia", "Lo que se agrega al radical para obtener la forma conjugada es la desinencia"]
-ayuda[2] = ["-ent corresponde siempre a ils/elles", "-t es siempre 3ra persona", "-s puede corresponder a 'je' o 'tu'", "-ons corresponde siempre a 'nous'", "-e puede corresponder a 'je' o 'il/elle/on'", "-es corresponde a 'tu'", "-ez es siempre 'vous'" ];
+ayuda[25] = ["Los verbos en '-qu\u00e9rir' y en '-enir' se conjugan como 'querer'  en espa\u00f1ol", "Los verbos en '-qu\u00e9rir' y en '-enir' se conjugan como 'querer'  en espa\u00f1ol", "Los verbos en '-qu\u00e9rir' y en '-enir' se conjugan como 'querer'  en espa\u00f1ol", "El radical para 'nous' y 'vous' es igual al del infinitivo", "El radical para 'nous' y 'vous' es igual al del infinitivo", "Los verbos en 'qu\u00e9rir' llevan acento grave en la 3ra persona del plural ya que la 'e' es final de s\u00edlaba al escrito pero no al oral. En cambio, los verbos en '-enir' duplican la consonante, de modo que la 'e' deja de ser final de s\u00edlaba y por lo tanto no lleva tilde (como con los verbos 'appeler' y 'jeter')"]
+ayuda[26] = ["Cuando en español usamos ue, en franc\u00e9s se usa eu. Atenci\u00f3n con la mp", "Cuando en español usamos ue, en franc\u00e9s se usa eu. Atenci\u00f3n con la mp", "Cuando en español usamos ue, en franc\u00e9s se usa eu. Atenci\u00f3n con la mp", "El radical es el mismo del infinitivo", "El radical es el mismo del infinitivo", "Cuando en español usamos ue, en franc\u00e9s se usa eu. Atenci\u00f3n con la mp"];
 ayuda[3] = ["No es un verbo en -er ni en -illir ni en -ffrir ni en -ouvrir", "Verbo en -er", "No es un verbo en -er ni en -illir ni en -ffrir ni en -ouvrir", "No es un verbo en -ouvrir", "Es un verbo en -ouvrir", "Verbo en -illir", "Verbo en -er", "No es un verbo en -er ni en -illir ni en -ffrir ni en -ouvrir" ];      
 ayuda[4] = ["Los verbos en -er, -illir, -ffrir y -ouvrir utilizan des(a)", "No es un verbo ni en -er ni en -illir -ni en ffrir ni en -ouvrir", "Verbo en -ffrir", "Verbo en -illir", "\u00bfEs alguno de los 4 casos de des(a)? Porque si no es des(a) es des(b)"];
 ayuda[5] = ["-ent es siempre desinencia de 3ra persona plural", "-t es siempre desinencia de 3ra persona", "-s es des(b) para dos pronombres",  "-ons es siempre desinencia del mismo pronombre",  "-e es des(a)", "-es es des(a) y es caracter\u00edstico de un pronombre en particular. En espa\u00f1ol tambi\u00e9n.", "-ez es siempre desinencia del mismo pronombre", ]; 
@@ -314,11 +315,13 @@ function impayuda() {
  // crea la lista de ejercicios
  function crearlista() {
  var itemlist; var nomit;
- 
- for (var x = 30; cantejer >= x ; x++ ) {
+ document.getElementById("listas").setAttribute("start", 25);
+
+ for (var x = 25; cantejer >= x ; x++ ) {
    
+  
    itemlist = document.createElement("li"); 
-   itemlist.setAttribute("onclick", "window.location.href='Ejercicio" + x + ".html'");
+   itemlist.setAttribute("onclick", "window.location.href='Ejercicio" + x + ".html'");console.log(x);
    nomit = document.createTextNode(nomejer[x]);
    itemlist.appendChild(nomit);
        
@@ -350,7 +353,7 @@ function crearayuda() {
 
  // Cambia el color del ejercicio seleccionado en la lista de ejercicios 
 function colorejercicio(il) {
-   document.getElementById("listas").childNodes[il].style.color = "yellow";
+   document.getElementById("listas").childNodes[il-24].style.color = "yellow";
 }
 
 

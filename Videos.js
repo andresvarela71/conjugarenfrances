@@ -10,6 +10,7 @@
  dirvideo[4] = "https://www.youtube.com/embed/Z9ny7_tFKfE"; titvideo[4] = "La marca plural (2da parte)";
  dirvideo[5] = "https://www.youtube.com/embed/_Tvh3RfjLo4"; titvideo[5] = "La marca plural (3ra parte)";
  dirvideo[6] = "https://www.youtube.com/embed/b7y5e_uqI3o"; titvideo[6] = "La yod";
+ dirvideo[7] = "https://www.youtube.com/embed/0p-fMGP5Z1Y"; titvideo[6] = "Verbos con 2 radicales (1ra parte)";
  
  function cargarvideo(nrovideo) {
 	document.getElementById("titvideo").innerHTML = nrovideo + ". " + titvideo[nrovideo - 1];
