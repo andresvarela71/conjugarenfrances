@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="../EstilosCV.css"> <!-- Indicar archivo de estilos .css -->
 	<script type="text/javascript" src="../EjerciciosB.js"></script>
 </head>
-<body onload="borrar(26, 'aleat')">
+<body onload="borrar(28, 'aleat')">
 	<div id="contenedor">
 		
 	
@@ -21,7 +21,7 @@
 	
 		<section id="secejercicio">
 			<h3  id="kejerc"></h3>
-			<p><span class="negrita">Indic&#225; cu&#225;l es la terminación de cada verbo:</span><br>
+			<p><span class="negrita">Indic&#225; cu&#225;l es la <span class = "negrita">mp</span> de cada verbo:</span><br>
 				<span id="previo" class="ital rojo"></span></p>
 				
 			<form>
@@ -37,15 +37,15 @@
 					<div id="verbo7" class="c1de2 jder aend"></div><div class="c2de2 jizq"><input class="input inputmini" onclick="blanco(7)" onblur="input(7)"></div>
 
 
+					<div class="c1de1">
+						Si el verbo no tiene <span class="negrita">mp</span> utiliz&#225 este s&#237mbolo: <input class="botones" type="button" value="&#248;" onclick="agregarcar('nousa')">
+					</div>
 
-					
-			
-				
-									
+												
 					<div class="c1de1 centro margensup">
-						<input class="botones" type="button" value="Corregir" onclick="corregir(26, 'i', 'aleat')">
-						<input class="botones" type="reset" value="Borrar" onclick="borrar(26, 'aleat')">
-						<input class="botones" type="button" value="Mostrar" onclick="mostrar(26, 'aleat')">
+						<input class="botones" type="button" value="Corregir" onclick="corregir(28, 'i', 'aleat')">
+						<input class="botones" type="reset" value="Borrar" onclick="borrar(28, 'aleat')">
+						<input class="botones" type="button" value="Mostrar" onclick="mostrar(28, 'aleat')">
 						<select class="botones" id="ayuda" onchange="impayuda()">
 						
 						</select>
